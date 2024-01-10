@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public int doorNumber;
+    public GameObject door;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +15,7 @@ public class Door : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         DoorUse doorUse = collision.GetComponent<DoorUse>();
-        doorUse.InDoor();
+        doorUse.InDoor(door);
     }
 
     // Update is called once per frame
