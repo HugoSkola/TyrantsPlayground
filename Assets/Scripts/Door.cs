@@ -11,10 +11,11 @@ public class Door : MonoBehaviour
         
     }
 
+    // Called when the player is touching a door
     private void OnTriggerStay2D(Collider2D collision)
     {
         DoorUse doorUse = collision.GetComponent<DoorUse>();
-        doorUse.InDoor(doorNumber);
+        doorUse.InDoor();
     }
 
     // Update is called once per frame
