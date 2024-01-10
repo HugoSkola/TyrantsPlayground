@@ -14,7 +14,7 @@ public class Door : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         DoorUse doorUse = collision.GetComponent<DoorUse>();
-        doorUse.InDoor(true, doorNumber);
+        doorUse.InDoor(doorNumber);
     }
 
     // Update is called once per frame

@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class DoorUse : MonoBehaviour
 {
+    public GameObject correspondingDoor;
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    public void InDoor(bool doorActive, int doorNumber)
+    public void InDoor(int doorNumber)
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-
+            gameObject.transform.position = correspondingDoor.transform.position;
         }
     }
 
