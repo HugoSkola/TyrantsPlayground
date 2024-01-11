@@ -6,7 +6,6 @@ public class DoorUse : MonoBehaviour
 {
     GameObject publicDoor;
     bool doorActive;
-    public GameObject correspondingDoor;
     // Start is called before the first frame update
     void Start()
     {
