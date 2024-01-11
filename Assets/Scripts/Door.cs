@@ -31,6 +31,7 @@ public class Door : MonoBehaviour
         byDoor = false;
         DoorUse doorUse = collision.GetComponent<DoorUse>();
         doorUse.InDoor(door, byDoor);
+        door.SetActive(false);
     }
 
 
