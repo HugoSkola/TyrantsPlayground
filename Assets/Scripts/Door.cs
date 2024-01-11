@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    float countDown;
-    float countDownReset = 0.5f;
-    bool byDoor;
+    public int maxDoorFrame = 2;
+    public float countDown;
+    public float countDownReset = 0.09f;
+    public bool byDoor;
     int doorInstance;
     public Sprite[] doorInstanceSprite;
     public SpriteRenderer doorType;
@@ -14,6 +15,7 @@ public class Door : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        countDown = countDownReset;
         
     }
 
@@ -24,12 +26,17 @@ public class Door : MonoBehaviour
         DoorUse doorUse = collision.GetComponent<DoorUse>();
         doorUse.InDoor(door, byDoor);
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        byDoor = false;
+    }
 
-    
+
     // Update is called once per frame
     void Update()
     {
-        if (byDoor && doorInstance != 2)
+        // Switches door instance when by the door
+        if (byDoor && doorInstance < maxDoorFrame)
         {
             if (countDown > 0)
             {
@@ -39,12 +46,15 @@ public class Door : MonoBehaviour
             {
                 countDown = countDownReset;
                 doorInstance++;
+                Debug.Log("Door+");
             }
 
             
         }
-        if (!byDoor && doorInstance != 0)
+        // Switches door instance when not by the door
+        else if (!byDoor && doorInstance > 0)
         {
+            Debug.Log("Door left");
             if (countDown > 0)
             {
                 countDown -= Time.deltaTime;
@@ -53,6 +63,7 @@ public class Door : MonoBehaviour
             {
                 countDown = countDownReset;
                 doorInstance--;
+                Debug.Log("Door-");
             }
         }
 

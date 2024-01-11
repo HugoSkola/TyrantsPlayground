@@ -15,6 +15,7 @@ public class DoorUse : MonoBehaviour
 
     public void InDoor(GameObject door, bool byDoor)
     {
+        // Makes varibles usable in other functions
         doorActive = byDoor;
         publicDoor = door;
     }
