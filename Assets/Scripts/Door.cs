@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    float countDown;
+    float countDownReset = 0.5f;
     bool byDoor;
     int doorInstance;
     public Sprite[] doorInstanceSprite;
@@ -20,15 +22,40 @@ public class Door : MonoBehaviour
     {
         byDoor = collision;
         DoorUse doorUse = collision.GetComponent<DoorUse>();
-        doorUse.InDoor(door);
+        doorUse.InDoor(door, byDoor);
     }
 
+    
     // Update is called once per frame
     void Update()
     {
         if (byDoor && doorInstance != 2)
         {
+            if (countDown > 0)
+            {
+                countDown -= Time.deltaTime;
+            }
+            else
+            {
+                countDown = countDownReset;
+                doorInstance++;
+            }
+
             
         }
+        if (!byDoor && doorInstance != 0)
+        {
+            if (countDown > 0)
+            {
+                countDown -= Time.deltaTime;
+            }
+            else
+            {
+                countDown = countDownReset;
+                doorInstance--;
+            }
+        }
+
+        doorType.sprite = doorInstanceSprite[doorInstance];
     }
 }
