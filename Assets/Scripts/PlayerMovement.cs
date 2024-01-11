@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public LayerMask ground;
     public float jumpHeight;
     public float moveSpeed;
     Vector2 move;
     Rigidbody2D rb;
-    bool canJump = true;
+    public bool canJump = true;
     public float walkCountDown;
     public float walkCountDownReset;
     public int maxWalkFrame;
@@ -20,6 +21,22 @@ public class PlayerMovement : MonoBehaviour
     {
         walkCountDown = walkCountDownReset;
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if ((ground.value & (1 << collision.gameObject.layer)) != 0)
+        {
+            canJump = true;
+        }
+        
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if ((ground.value & (1 << collision.gameObject.layer)) != 0)
+        {
+            canJump = false;
+        }
     }
 
     // Update is called once per frame
@@ -40,9 +57,8 @@ public class PlayerMovement : MonoBehaviour
         if (canJump && Input.GetKeyDown(KeyCode.Space))
         {
             move += Vector2.up * jumpHeight;
-            canJump = false;
         }
-        if (rb.velocity.x != 0 && rb.velocity.y == 0)
+        if (rb.velocity.x > 0.5f && canJump || rb.velocity.x < -0.5f && canJump)
         {
             if (walkCountDown > 0)
             {
@@ -67,10 +83,5 @@ public class PlayerMovement : MonoBehaviour
         player.sprite = walkFrameSprite[walkFrame];
 
         rb.velocity = move;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        canJump = true;
     }
 }
