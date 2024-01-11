@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     Vector2 move;
     Rigidbody2D rb;
+    bool canJump = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +28,17 @@ public class PlayerMovement : MonoBehaviour
         {
             move += Vector2.right * moveSpeed;
         }
-        if (rb.velocity.y == 0 && Input.GetKeyDown(KeyCode.Space))
+        if (canJump && Input.GetKeyDown(KeyCode.Space))
         {
             move += Vector2.up * jumpHeight;
+            canJump = false;
         }
 
         rb.velocity = move;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        canJump = true;
     }
 }
