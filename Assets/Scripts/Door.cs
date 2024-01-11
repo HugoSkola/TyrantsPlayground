@@ -29,6 +29,8 @@ public class Door : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         byDoor = false;
+        DoorUse doorUse = collision.GetComponent<DoorUse>();
+        doorUse.InDoor(door, byDoor);
     }
 
 

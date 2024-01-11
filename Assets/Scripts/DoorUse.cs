@@ -6,7 +6,6 @@ public class DoorUse : MonoBehaviour
 {
     GameObject publicDoor;
     bool doorActive;
-    public GameObject correspondingDoor;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,9 +22,9 @@ public class DoorUse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // If the player presses "E" while standing in the door,  
+        // If the player presses "W" while standing in the door,  
         // it teleports them to the "Exit" connected
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.W) && doorActive)
         {
             gameObject.transform.position = publicDoor.transform.position;
         }
