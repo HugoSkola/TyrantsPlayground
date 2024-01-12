@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    public LayerMask player;
+    public bool doorsActive;
+    public GameObject rebelManager;
     public int maxDoorFrame = 2;
     public float countDown;
     public float countDownReset = 0.09f;
@@ -30,15 +33,21 @@ public class Door : MonoBehaviour
     // Called when the player is touching a door
     private void OnTriggerStay2D(Collider2D collision)
     {
-        byDoor = collision;
-        DoorUse doorUse = collision.GetComponent<DoorUse>();
-        doorUse.InDoor(door, byDoor);
+        if (doorsActive && (player.value & (1 << collision.gameObject.layer)) != 0)
+        {
+            byDoor = collision;
+            DoorUse doorUse = collision.GetComponent<DoorUse>();
+            doorUse.InDoor(door, byDoor);
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        byDoor = false;
-        DoorUse doorUse = collision.GetComponent<DoorUse>();
-        doorUse.InDoor(door, byDoor);
+        if (doorsActive && (player.value & (1 << collision.gameObject.layer)) != 0)
+        {
+            byDoor = false;
+            DoorUse doorUse = collision.GetComponent<DoorUse>();
+            doorUse.InDoor(door, byDoor);
+        }
     }
 
 
@@ -64,7 +73,6 @@ public class Door : MonoBehaviour
         // Switches door instance when not by the door
         else if (!byDoor && doorInstance > 0)
         {
-            Debug.Log("Door left");
             if (countDown > 0)
             {
                 countDown -= Time.deltaTime;
@@ -78,6 +86,16 @@ public class Door : MonoBehaviour
         }
 
         doorType.sprite = doorInstanceSprite[doorInstance];
+
+        if (rebelManager.transform.childCount > 0)
+        {
+            doorsActive = false;
+            byDoor = false;
+        }
+        else
+        {
+            doorsActive = true;
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
