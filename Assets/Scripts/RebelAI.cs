@@ -5,7 +5,7 @@ using UnityEngine;
 public class RebelAI : MonoBehaviour
 {
     Rigidbody2D rb;
-    public GameObject rebelPos;
+    public GameObject playerObj;
     public LayerMask ground;
     public float jumpHeight;
     public float moveSpeed;
@@ -39,9 +39,12 @@ public class RebelAI : MonoBehaviour
         }
     }
 
-    public void RebelAIController(GameObject player)
+    
+
+    // Update is called once per frame
+    void Update()
     {
-        Vector2 playerpos = player.transform.position - rebelPos.transform.position;
+        Vector3 playerpos = playerObj.transform.position - transform.position;
         Debug.Log(playerpos);
         if (playerpos.x < 0)
         {
@@ -53,13 +56,5 @@ public class RebelAI : MonoBehaviour
             transform.localScale = new Vector2(-1, 1);
             rb.velocity = new Vector2(5, rb.velocity.y);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-        
-
     }
 }

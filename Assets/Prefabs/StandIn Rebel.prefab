@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28bd83f38ef65994491b4c39d1072951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerObj: {fileID: 7566293991749842667, guid: 41503f64ca3c8b14dbd7417971cfc787, type: 3}
   rebelPos: {fileID: 7932013935823791202}
   ground:
     serializedVersion: 2

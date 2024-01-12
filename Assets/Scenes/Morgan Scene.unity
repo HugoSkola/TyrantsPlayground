@@ -169,6 +169,10 @@ MonoBehaviour:
   - {fileID: 1572744514, guid: 0fbb0cf0b0576d94bbba79d1ccb6ac1f, type: 3}
   doorType: {fileID: 135323368}
   door: {fileID: 228557551}
+  doorOpenAudioSource: {fileID: 0}
+  openDelay: 0
+  doorCloseAudioSource: {fileID: 0}
+  closeDelay: 0.8
 --- !u!212 &135323368
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -510,7 +514,7 @@ SpriteRenderer:
   m_Size: {x: 10.666667, y: 5.3333335}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &523936687
@@ -923,7 +927,7 @@ SpriteRenderer:
   m_Size: {x: 10.666667, y: 5.3333335}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &605300108
@@ -1053,7 +1057,7 @@ SpriteRenderer:
   m_Size: {x: 10.666667, y: 5.3333335}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &737227896
@@ -1242,6 +1246,10 @@ MonoBehaviour:
   - {fileID: 1572744514, guid: 0fbb0cf0b0576d94bbba79d1ccb6ac1f, type: 3}
   doorType: {fileID: 1010924005}
   door: {fileID: 908490080}
+  doorOpenAudioSource: {fileID: 0}
+  openDelay: 0
+  doorCloseAudioSource: {fileID: 0}
+  closeDelay: 0.8
 --- !u!212 &1010924005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1422,7 +1430,7 @@ SpriteRenderer:
   m_Size: {x: 10.666667, y: 5.3333335}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1067703520
@@ -1547,6 +1555,10 @@ MonoBehaviour:
   - {fileID: 1572744514, guid: 0fbb0cf0b0576d94bbba79d1ccb6ac1f, type: 3}
   doorType: {fileID: 1149788602}
   door: {fileID: 1652835636}
+  doorOpenAudioSource: {fileID: 0}
+  openDelay: 0
+  doorCloseAudioSource: {fileID: 0}
+  closeDelay: 0.8
 --- !u!212 &1149788602
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1755,7 +1767,7 @@ Transform:
   m_GameObject: {fileID: 1234565841}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.32164818, y: -2.34, z: 0}
+  m_LocalPosition: {x: -0.3194, y: -2.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1960,6 +1972,10 @@ MonoBehaviour:
   - {fileID: 1572744514, guid: 0fbb0cf0b0576d94bbba79d1ccb6ac1f, type: 3}
   doorType: {fileID: 1564044381}
   door: {fileID: 303388102}
+  doorOpenAudioSource: {fileID: 0}
+  openDelay: 0
+  doorCloseAudioSource: {fileID: 0}
+  closeDelay: 0.8
 --- !u!212 &1564044381
 SpriteRenderer:
   m_ObjectHideFlags: 0
