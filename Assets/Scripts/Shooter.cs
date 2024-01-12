@@ -37,5 +37,12 @@ public class Shooter : MonoBehaviour
     void ShootBullet()
     {
         GameObject bullet = Instantiate(BulletPrefab, bulletspawn.position, Quaternion.identity);
+
+        bool isFacingRight = transform.localScale.x > 0;
+
+        if (!isFacingRight)
+        {
+            bullet.transform.Rotate(0f, 180f, 0f);
+        }
     }
 }
