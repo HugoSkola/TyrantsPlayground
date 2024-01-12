@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42f42a34a1fb97438619e110e23e2fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletPrefab: {fileID: 470617584589544392, guid: 8dd68714ab2a7e54fb2786a028aeb522, type: 3}
+  BulletPrefab: {fileID: 2216531731239444273, guid: bf352b7bcf3d90b47a01b483cd85f0ee, type: 3}
   bulletspawn: {fileID: 871964966}
   shootingDelay: 2
   ShootingSound: {fileID: 8300000, guid: c4a540c2fc62b1d4ba648defc57bf772, type: 3}

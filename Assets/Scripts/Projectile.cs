@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     float BulletSpeed = 1f;
 
+
     // Start is called before the first frame update
     void Start()
     {
