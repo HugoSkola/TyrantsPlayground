@@ -169,10 +169,9 @@ MonoBehaviour:
   - {fileID: 1572744514, guid: 0fbb0cf0b0576d94bbba79d1ccb6ac1f, type: 3}
   doorType: {fileID: 135323368}
   door: {fileID: 228557551}
+  DoorOpenSound: {fileID: 0}
   doorOpenAudioSource: {fileID: 0}
   openDelay: 0
-  doorCloseAudioSource: {fileID: 0}
-  closeDelay: 0.8
 --- !u!212 &135323368
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1246,10 +1245,9 @@ MonoBehaviour:
   - {fileID: 1572744514, guid: 0fbb0cf0b0576d94bbba79d1ccb6ac1f, type: 3}
   doorType: {fileID: 1010924005}
   door: {fileID: 908490080}
+  DoorOpenSound: {fileID: 0}
   doorOpenAudioSource: {fileID: 0}
   openDelay: 0
-  doorCloseAudioSource: {fileID: 0}
-  closeDelay: 0.8
 --- !u!212 &1010924005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1555,10 +1553,9 @@ MonoBehaviour:
   - {fileID: 1572744514, guid: 0fbb0cf0b0576d94bbba79d1ccb6ac1f, type: 3}
   doorType: {fileID: 1149788602}
   door: {fileID: 1652835636}
+  DoorOpenSound: {fileID: 0}
   doorOpenAudioSource: {fileID: 0}
   openDelay: 0
-  doorCloseAudioSource: {fileID: 0}
-  closeDelay: 0.8
 --- !u!212 &1149788602
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1972,10 +1969,9 @@ MonoBehaviour:
   - {fileID: 1572744514, guid: 0fbb0cf0b0576d94bbba79d1ccb6ac1f, type: 3}
   doorType: {fileID: 1564044381}
   door: {fileID: 303388102}
+  DoorOpenSound: {fileID: 0}
   doorOpenAudioSource: {fileID: 0}
   openDelay: 0
-  doorCloseAudioSource: {fileID: 0}
-  closeDelay: 0.8
 --- !u!212 &1564044381
 SpriteRenderer:
   m_ObjectHideFlags: 0
