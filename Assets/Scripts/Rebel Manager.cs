@@ -79,7 +79,7 @@ public class RebelManager : MonoBehaviour
             RebelAI rebelAI = spawnedRebel.GetComponent<RebelAI>();
             if (rebelsExist)
             {
-                rebelAI.RebelAIController(player);
+             //   rebelAI.RebelAIController(player);
             }
         }
         
