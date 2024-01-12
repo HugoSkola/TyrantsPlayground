@@ -154,6 +154,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363dadd05b514a44d902d94c5597d841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player:
+    serializedVersion: 2
+    m_Bits: 128
+  doorsActive: 0
+  rebelManager: {fileID: 498147499}
   maxDoorFrame: 2
   countDown: 0
   countDownReset: 0.1
@@ -368,6 +373,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1a7ac99c990594bbe0e41fc7b0c42e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rebelsExist: 0
+  rebel: {fileID: 7932013935823791202, guid: 397744e4f1f896947bd392644f0c5637, type: 3}
+  player: {fileID: 1234565841}
+  LeftOrRight: 0
+  spawnCooldown: 30
+  spawnCooldownReset: 30
+  spawnInterval: 1
+  spawnIntervalReset: 2
+  spawnWaveAmount: 1
+  spawnWaveAmountReset: 1
 --- !u!4 &498147501
 Transform:
   m_ObjectHideFlags: 0
@@ -1212,6 +1227,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363dadd05b514a44d902d94c5597d841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player:
+    serializedVersion: 2
+    m_Bits: 128
+  doorsActive: 0
+  rebelManager: {fileID: 498147499}
   maxDoorFrame: 2
   countDown: 0
   countDownReset: 0.1
@@ -1512,6 +1532,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363dadd05b514a44d902d94c5597d841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player:
+    serializedVersion: 2
+    m_Bits: 128
+  doorsActive: 0
+  rebelManager: {fileID: 498147499}
   maxDoorFrame: 2
   countDown: 0
   countDownReset: 0.1
@@ -1589,8 +1614,9 @@ GameObject:
   - component: {fileID: 1234565848}
   - component: {fileID: 1234565843}
   - component: {fileID: 1234565849}
-  m_Layer: 0
-  m_Name: StandIn Player
+  - component: {fileID: 1234565850}
+  m_Layer: 7
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1655,7 +1681,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.17650223}
+  m_Offset: {x: 0, y: -0.1572746}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1666,7 +1692,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.219079}
+  m_Size: {x: 1, y: 2.1806238}
   m_EdgeRadius: 0
 --- !u!212 &1234565844
 SpriteRenderer:
@@ -1815,7 +1841,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.3}
+  m_Offset: {x: 0, y: -1.26539}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1826,8 +1852,23 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.99, y: 0.2}
+  m_Size: {x: 0.99, y: 0.13}
   m_EdgeRadius: 0
+--- !u!114 &1234565850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234565841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a42f42a34a1fb97438619e110e23e2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BulletPrefab: {fileID: 3225629617959731177, guid: 0580bd96f148bc047b92800992b1f6b4, type: 3}
+  bulletspawn: {fileID: 1234565845}
+  shootingDelay: 1
 --- !u!1 &1564044378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,6 +1945,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363dadd05b514a44d902d94c5597d841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player:
+    serializedVersion: 2
+    m_Bits: 128
+  doorsActive: 0
+  rebelManager: {fileID: 498147499}
   maxDoorFrame: 2
   countDown: 0
   countDownReset: 0.1
