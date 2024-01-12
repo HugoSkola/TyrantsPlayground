@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             walkCountDown = walkCountDownReset;
-            walkFrame = 0;
+            walkFrame = 8;
         }
 
         player.sprite = walkFrameSprite[walkFrame];

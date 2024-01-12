@@ -462,8 +462,8 @@ Transform:
   m_GameObject: {fileID: 891900419}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.46, y: 4.87, z: 0}
-  m_LocalScale: {x: 3.9521775, y: 3.0828362, z: 1}
+  m_LocalPosition: {x: -4.21, y: 1.24, z: 0}
+  m_LocalScale: {x: 0.9988418, y: 0.7475621, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -504,7 +504,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.76, y: 2.72}
+    oldSize: {x: 7.3333335, y: 11.333333}
     newSize: {x: 1.76, y: 2.72}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -523,7 +523,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1237951191}
   - component: {fileID: 1237951190}
-  - component: {fileID: 1237951189}
   - component: {fileID: 1237951188}
   - component: {fileID: 1237951192}
   m_Layer: 0
@@ -545,6 +544,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363dadd05b514a44d902d94c5597d841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player:
+    serializedVersion: 2
+    m_Bits: 128
+  doorsActive: 0
+  rebelManager: {fileID: 0}
   maxDoorFrame: 2
   countDown: 0
   countDownReset: 0.09
@@ -555,27 +559,10 @@ MonoBehaviour:
   - {fileID: 1572744514, guid: 0fbb0cf0b0576d94bbba79d1ccb6ac1f, type: 3}
   doorType: {fileID: 1237951190}
   door: {fileID: 0}
---- !u!95 &1237951189
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237951187}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dbe5803bae8af884eb70b6ee14ebe18c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  doorOpenAudioSource: {fileID: 0}
+  openDelay: 0
+  doorCloseAudioSource: {fileID: 0}
+  closeDelay: 0.8
 --- !u!212 &1237951190
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -637,7 +624,7 @@ Transform:
   m_GameObject: {fileID: 1237951187}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.1193, y: -1.91, z: 0}
+  m_LocalPosition: {x: -4.17, y: -1.985, z: 0}
   m_LocalScale: {x: 1.038, y: 0.73396784, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -834,7 +821,7 @@ GameObject:
   - component: {fileID: 1593068585}
   - component: {fileID: 1593068586}
   - component: {fileID: 1593068587}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1014,6 +1001,14 @@ MonoBehaviour:
   - {fileID: 1558502310, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
   - {fileID: -1122283848, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
   - {fileID: -896675009, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  - {fileID: 1727778545, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
+  - {fileID: -1135216602, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
+  - {fileID: -1803948706, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
+  - {fileID: -29942917, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
+  - {fileID: -1497259567, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
+  - {fileID: -1496378445, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
+  - {fileID: -357811913, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
+  - {fileID: -682359247, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
   player: {fileID: 1593068579}
 --- !u!114 &1593068585
 MonoBehaviour:
@@ -1027,7 +1022,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4203854eb09272f4d882fef9067dfa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingDoor: {fileID: 1237951187}
 --- !u!114 &1593068586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1072,7 +1066,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -1.3}

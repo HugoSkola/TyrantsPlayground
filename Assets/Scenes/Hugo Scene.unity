@@ -321,7 +321,7 @@ Transform:
   m_GameObject: {fileID: 871964965}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.36, y: 0, z: 0}
+  m_LocalPosition: {x: -1.14, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 1212465960}
   - component: {fileID: 1212465959}
   - component: {fileID: 1212465962}
-  - component: {fileID: 1212465961}
+  - component: {fileID: 1212465963}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -407,7 +407,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -1644144812, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -458,7 +458,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1212465960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -504,20 +504,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.80462646, y: 2.286963}
   m_EdgeRadius: 0
---- !u!114 &1212465961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212465955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56f4a1fbc267609409fae58ee0c3b617, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpHeight: 1
-  moveSpeed: 1
 --- !u!114 &1212465962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,7 +516,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4203854eb09272f4d882fef9067dfa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingDoor: {fileID: 0}
+--- !u!114 &1212465963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212465955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: becadabdd15e35b4f923bb8575689338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ground:
+    serializedVersion: 2
+    m_Bits: 8
+  jumpHeight: 5
+  moveSpeed: 5
+  canJump: 1
+  walkCountDown: 0
+  walkCountDownReset: 0.04
+  maxWalkFrame: 11
+  walkFrameSprite:
+  - {fileID: -1644144812, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  - {fileID: -1472848005, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  - {fileID: 2036515523, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  - {fileID: 1708087812, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  - {fileID: 1423833334, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  - {fileID: -1928908026, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  - {fileID: 290976813, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  - {fileID: -856883107, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  - {fileID: -2097372803, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  - {fileID: 1558502310, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  - {fileID: -1122283848, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  - {fileID: -896675009, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  player: {fileID: 1212465957}
 --- !u!1 &1474456939
 GameObject:
   m_ObjectHideFlags: 0
