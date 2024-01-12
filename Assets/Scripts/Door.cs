@@ -17,17 +17,21 @@ public class Door : MonoBehaviour
     public GameObject door;
 
     [Header("Audio")]
-    [SerializeField] private AudioSource doorOpenAudioSource = null;
+    public AudioClip DoorOpenSound;
+    [SerializeField] private AudioSource doorOpenAudioSource;
     [SerializeField] private float openDelay = 0;
+    /*/
     [Space(10)]
     [SerializeField] private AudioSource doorCloseAudioSource = null;
     [SerializeField] private float closeDelay = 0.8f;
+    /*/
 
     // Start is called before the first frame update
     void Start()
     {
         countDown = countDownReset;
-        
+        doorOpenAudioSource = GetComponent<AudioSource>();
+        doorsActive = true;
     }
 
     // Called when the player is touching a door
@@ -86,7 +90,7 @@ public class Door : MonoBehaviour
         }
 
         doorType.sprite = doorInstanceSprite[doorInstance];
-
+        /*/
         if (rebelManager.transform.childCount > 0)
         {
             doorsActive = false;
@@ -95,15 +99,18 @@ public class Door : MonoBehaviour
         else
         {
             doorsActive = true;
-        }
+        }/*/
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        doorOpenAudioSource.PlayDelayed(openDelay);
-
+        if(DoorOpenSound != null)
+        {
+            doorOpenAudioSource.PlayOneShot(DoorOpenSound);
+        }
+        
+        /*/
         doorCloseAudioSource.PlayDelayed(closeDelay);
-
+        /*/
     }
     
 }
