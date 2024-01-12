@@ -15,6 +15,14 @@ public class Door : MonoBehaviour
     public Sprite[] doorInstanceSprite;
     public SpriteRenderer doorType;
     public GameObject door;
+
+    [Header("Audio")]
+    [SerializeField] private AudioSource doorOpenAudioSource = null;
+    [SerializeField] private float openDelay = 0;
+    [Space(10)]
+    [SerializeField] private AudioSource doorCloseAudioSource = null;
+    [SerializeField] private float closeDelay = 0.8f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -89,4 +97,13 @@ public class Door : MonoBehaviour
             doorsActive = true;
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        doorOpenAudioSource.PlayDelayed(openDelay);
+
+        doorCloseAudioSource.PlayDelayed(closeDelay);
+
+    }
+    
 }
