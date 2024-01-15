@@ -16,11 +16,14 @@ public class PlayerMovement : MonoBehaviour
     int walkFrame;
     public Sprite[] walkFrameSprite;
     public SpriteRenderer player;
+    public AudioClip walkingSoundClip;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         walkCountDown = walkCountDownReset;
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -48,11 +51,13 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector2(1, 1);
             move += Vector2.left * moveSpeed;
+            walkingSound();
         }
         if (Input.GetKey(KeyCode.D))
         {
             transform.localScale = new Vector2(-1, 1);
             move += Vector2.right * moveSpeed;
+            walkingSound();
         }
         if (canJump && Input.GetKeyDown(KeyCode.Space))
         {
@@ -97,5 +102,12 @@ public class PlayerMovement : MonoBehaviour
         player.sprite = walkFrameSprite[walkFrame];
 
         rb.velocity = move;
+    }
+    void walkingSound()
+    {
+        if (walkingSoundClip != null && !audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(walkingSoundClip);
+        }
     }
 }
