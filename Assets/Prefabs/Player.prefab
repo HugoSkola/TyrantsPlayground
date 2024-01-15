@@ -163,11 +163,6 @@ MonoBehaviour:
   - {fileID: 1558502310, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
   - {fileID: -1122283848, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
   - {fileID: -896675009, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
-  - {fileID: -9180996314697931608, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
-  - {fileID: -1941815996, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
-  - {fileID: 546251578, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
-  - {fileID: 1965244175, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
-  - {fileID: 202451608, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
   player: {fileID: 6514299262162438563}
 --- !u!61 &8354020570635776063
 BoxCollider2D:
