@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpawn: {fileID: 714166950}
+  rebelManagerObj: {fileID: 1869581131}
   player: {fileID: 7566293991749842667, guid: 41503f64ca3c8b14dbd7417971cfc787, type: 3}
   playerFollower: {fileID: 1766223521}
 --- !u!4 &671435457
@@ -331,50 +332,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1139335306
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1139335307}
-  - component: {fileID: 1139335308}
-  m_Layer: 0
-  m_Name: Rebel Controller
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1139335307
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139335306}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4772174, y: -3.414716, z: -2.6357193}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1139335308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139335306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cf6a73b2a1ab84dbfb5960f480b118, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1766223521
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,8 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rebelsExist: 0
-  rebel: {fileID: 7932013935823791202, guid: 397744e4f1f896947bd392644f0c5637, type: 3}
-  player: {fileID: 1766223521}
+  rebel: {fileID: 3648680192537526494, guid: be0740f2ff714c5459aa27fa9532abb4, type: 3}
   LeftOrRight: 0
   spawnCooldown: 0
   spawnCooldownReset: 5
@@ -589,4 +545,3 @@ SceneRoots:
   - {fileID: 714166950}
   - {fileID: 459065919}
   - {fileID: 1766223522}
-  - {fileID: 1139335307}
