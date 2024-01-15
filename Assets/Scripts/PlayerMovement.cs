@@ -74,10 +74,6 @@ public class PlayerMovement : MonoBehaviour
                 walkCountDown = walkCountDownReset;
                 walkFrame++;
             }
-            else
-            {
-                walkFrame = 0;
-            }
         }
         else
         {
