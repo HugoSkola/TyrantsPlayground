@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4e8048458521ba045bb89863c9dfb816
+guid: e14c64c93725bd64ebcdfb7333dcf2b7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,138 +123,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MangusHoppa_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a4624aae7c869080800000000000000
-      internalID: -9180996314697931608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MangusHoppa_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da5bfbdd5150a1c428e50bbfdb3bf217
-      internalID: 1203973355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MangusHoppa_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f81b7499ca1eeb64d805c2696e695a7a
-      internalID: -1192633808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MangusHoppa_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39d2c21c7643a7b418f8da973170fc15
-      internalID: 1886681870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MangusHoppa_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fbd73f3065065545886c68ac2070f41
-      internalID: -333451563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MangusHoppa_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2214fa2dc77f1f4d9716f5998704a15
-      internalID: 1049156764
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MangusHoppa_6
+      name: SkjutAnimationNPC2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 26
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -263,19 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58355cf27a820b44db9adc66eee6defd
-      internalID: -906674279
+      spriteID: e0e4d3d23b9aac94f814731d9ff12906
+      internalID: 1483106063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MangusHoppa_7
+      name: SkjutAnimationNPC2_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 26
         y: 0
-        width: 32
+        width: 26
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -284,8 +158,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 224f2ce97d3bd1940bd4fcb653002cd8
-      internalID: -986796080
+      spriteID: ff6b8af6ff6b60845a3cbe0af94da56a
+      internalID: 299611514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkjutAnimationNPC2_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 26
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba35825c29b0944187b1e071d1a809f
+      internalID: -140819985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkjutAnimationNPC2_3
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 26
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48cf35e28a3b27846b7b91b89ffd994e
+      internalID: -1877179157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkjutAnimationNPC2_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 26
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12974759b2aa6742a0a68fc69ecc6fd
+      internalID: -428654645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkjutAnimationNPC2_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 26
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c610041bf87409a42b942d382977b371
+      internalID: -626516685
       vertices: []
       indices: 
       edges: []
@@ -293,7 +251,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 383081b4c2ab96c43a26f82c77e2b384
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -301,14 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MangusHoppa_0: -9180996314697931608
-      MangusHoppa_1: 1203973355
-      MangusHoppa_2: -1192633808
-      MangusHoppa_3: 1886681870
-      MangusHoppa_4: -333451563
-      MangusHoppa_5: 1049156764
-      MangusHoppa_6: -906674279
-      MangusHoppa_7: -986796080
+      SkjutAnimationNPC2_0: 1483106063
+      SkjutAnimationNPC2_1: 299611514
+      SkjutAnimationNPC2_2: -140819985
+      SkjutAnimationNPC2_3: -1877179157
+      SkjutAnimationNPC2_4: -428654645
+      SkjutAnimationNPC2_5: -626516685
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

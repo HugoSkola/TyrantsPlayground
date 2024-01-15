@@ -13,15 +13,17 @@ public class RebelAI : MonoBehaviour
     public float walkCountDown;
     public float walkCountDownReset;
     public int maxWalkFrame;
-    int walkFrame;
+    public int walkFrame;
     public Sprite[] walkFrameSprite;
     public SpriteRenderer rebel;
 
     // Start is called before the first frame update
     void Start()
     {
+        walkCountDown = walkCountDownReset;
         rb = GetComponent<Rigidbody2D>();
     }
+
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -56,5 +58,23 @@ public class RebelAI : MonoBehaviour
             transform.localScale = new Vector2(-1, 1);
             rb.velocity = new Vector2(5, rb.velocity.y);
         }
+        if (rb.velocity.x > 0.5f && canJump && walkFrame < 12 || rb.velocity.x < -0.5f && canJump && walkFrame < 12)
+        {
+            if (walkCountDown > 0)
+            {
+                walkCountDown -= Time.deltaTime;
+            }
+            else if (walkCountDown < 0 && walkFrame < maxWalkFrame)
+            {
+                walkCountDown = walkCountDownReset;
+                walkFrame++;
+            }
+            else if (walkFrame < 12)
+            {
+                walkFrame = 0;
+            }
+        }
+
+        rebel.sprite = walkFrameSprite[walkFrame];
     }
 }

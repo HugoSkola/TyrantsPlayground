@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float walkCountDown;
     public float walkCountDownReset;
     public int maxWalkFrame;
-    int walkFrame;
+    public int walkFrame;
     public Sprite[] walkFrameSprite;
     public SpriteRenderer player;
     public AudioClip walkingSoundClip;
@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
         {
             move += Vector2.up * jumpHeight;
         }
-        if (rb.velocity.x > 0.5f && canJump || rb.velocity.x < -0.5f && canJump)
+        if (rb.velocity.x > 0.5f && canJump && walkFrame < 12 || rb.velocity.x < -0.5f && canJump && walkFrame < 12)
         {
             if (walkCountDown > 0)
             {
@@ -74,15 +74,40 @@ public class PlayerMovement : MonoBehaviour
                 walkCountDown = walkCountDownReset;
                 walkFrame++;
             }
-            else
+            else if (walkFrame < 12)
             {
                 walkFrame = 0;
             }
         }
+        else if (canJump && walkFrame < 12)
+        {
+            walkFrame = 0;
+        }
         else
         {
-            walkCountDown = walkCountDownReset;
-            walkFrame = 8;
+            if (walkFrame < 12)
+            {
+                walkFrame = 12;
+            }
+            else if (walkCountDown < 0 && walkFrame < 16 && !canJump)
+            {
+                walkCountDown = walkCountDownReset;
+                walkFrame++;
+            }
+            else if (walkCountDown < 0 && canJump)
+            {
+                if (walkFrame > 11)
+                {
+                    walkFrame--;
+                }
+                walkCountDown = walkCountDownReset;
+            }
+            else
+            {
+                walkCountDown -= Time.deltaTime;
+            }
+            
+            
         }
 
         player.sprite = walkFrameSprite[walkFrame];

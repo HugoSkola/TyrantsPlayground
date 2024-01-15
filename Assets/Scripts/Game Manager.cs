@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public Transform playerSpawn;
+    public GameObject rebelManagerObj;
     public GameObject player;
     GameObject spawnedPlayer;
     public GameObject playerFollower;
@@ -22,5 +23,7 @@ public class GameManager : MonoBehaviour
     {
         PlayerFollow playerFollow = playerFollower.GetComponent<PlayerFollow>();
         playerFollow.PlayerPosition(spawnedPlayer.transform.position);
+        RebelManager rebelManager = rebelManagerObj.GetComponent<RebelManager>();
+        rebelManager.PlayerPosition(spawnedPlayer);
     }
 }

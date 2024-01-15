@@ -9,7 +9,7 @@ public class RebelManager : MonoBehaviour
     public GameObject rebel;
     GameObject spawnedRebel;
     GameObject rebelAI;
-    public GameObject player;
+    GameObject player;
     Vector3 spawnLocation;
     public int LeftOrRight;
     public float spawnCooldown;
@@ -24,6 +24,11 @@ public class RebelManager : MonoBehaviour
         spawnCooldown = spawnCooldownReset;
         spawnInterval = spawnIntervalReset;
         spawnWaveAmount = spawnWaveAmountReset;
+    }
+
+    public void PlayerPosition(GameObject playerPos)
+    {
+        player = playerPos;
     }
 
     // Update is called once per frame
@@ -74,14 +79,9 @@ public class RebelManager : MonoBehaviour
             rebelsExist = false;
         }
         // Allows for modifying behaviour for enemy AI by giving it information
-        if (spawnedRebel != null)
-        {
-            RebelAI rebelAI = spawnedRebel.GetComponent<RebelAI>();
-            if (rebelsExist)
-            {
-             //   rebelAI.RebelAIController(player);
-            }
-        }
+        
+            
+        
         
         
         

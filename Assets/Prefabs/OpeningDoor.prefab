@@ -98,6 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363dadd05b514a44d902d94c5597d841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player:
+    serializedVersion: 2
+    m_Bits: 128
+  doorsActive: 0
+  rebelManager: {fileID: 0}
   maxDoorFrame: 2
   countDown: 0
   countDownReset: 0.1
@@ -108,6 +113,9 @@ MonoBehaviour:
   - {fileID: 1572744514, guid: 0fbb0cf0b0576d94bbba79d1ccb6ac1f, type: 3}
   doorType: {fileID: 7523923093929246093}
   door: {fileID: 0}
+  DoorOpenSound: {fileID: 0}
+  doorOpenAudioSource: {fileID: 0}
+  openDelay: 0
 --- !u!61 &2945070714210140278
 BoxCollider2D:
   m_ObjectHideFlags: 0
