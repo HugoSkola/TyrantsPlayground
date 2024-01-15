@@ -20,13 +20,10 @@ public class RebelAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        walkCountDown = walkCountDownReset;
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void RebelAIController(GameObject player)
-    {
-        playerObj = player;
-    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {

@@ -345,8 +345,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1766223521}
     - target: {fileID: 3536850924731098129, guid: 397744e4f1f896947bd392644f0c5637, type: 3}
+      propertyPath: walkFrame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3536850924731098129, guid: 397744e4f1f896947bd392644f0c5637, type: 3}
       propertyPath: maxWalkFrame
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3536850924731098129, guid: 397744e4f1f896947bd392644f0c5637, type: 3}
+      propertyPath: walkCountDown
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 3688677878256903928, guid: 397744e4f1f896947bd392644f0c5637, type: 3}
       propertyPath: m_LocalPosition.x

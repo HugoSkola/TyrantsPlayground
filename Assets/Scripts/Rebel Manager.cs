@@ -80,8 +80,6 @@ public class RebelManager : MonoBehaviour
         }
         // Allows for modifying behaviour for enemy AI by giving it information
         
-        RebelAI rebelAI = spawnedRebel.GetComponent<RebelAI>();
-        rebelAI.RebelAIController(player);
             
         
         

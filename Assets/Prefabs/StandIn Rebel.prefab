@@ -109,8 +109,9 @@ MonoBehaviour:
   moveSpeed: 5
   canJump: 1
   walkCountDown: 0
-  walkCountDownReset: 0
-  maxWalkFrame: 0
+  walkCountDownReset: 0.04
+  maxWalkFrame: 11
+  walkFrame: 0
   walkFrameSprite:
   - {fileID: 141900523, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
   - {fileID: 906134582, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
