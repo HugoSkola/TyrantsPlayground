@@ -23,6 +23,11 @@ public class RebelAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    public void RebelAIController(GameObject player)
+    {
+        playerObj = player;
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if ((ground.value & (1 << collision.gameObject.layer)) != 0)
