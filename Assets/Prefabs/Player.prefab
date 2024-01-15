@@ -333,7 +333,7 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 8
-  jumpHeight: 5
+  jumpHeight: 7
   moveSpeed: 5
   canJump: 1
   walkCountDown: 0
