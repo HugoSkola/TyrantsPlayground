@@ -14,6 +14,7 @@ public class RebelAI : MonoBehaviour
     public float walkCountDownReset;
     public int maxWalkFrame;
     public int walkFrame;
+    public float aggroRange;
     public Sprite[] walkFrameSprite;
     public SpriteRenderer rebel;
 
@@ -52,17 +53,22 @@ public class RebelAI : MonoBehaviour
     void Update()
     {
         Vector3 playerpos = playerObj.transform.position - transform.position;
+        float distance = Mathf.Sqrt(playerpos.x * playerpos.x + playerpos.y * playerpos.y);
+        if (distance < aggroRange)
+        {
+            if (playerpos.x < 0)
+            {
+                transform.localScale = new Vector2(1, 1);
+                rb.velocity = new Vector2(-5, rb.velocity.y);
+            }
+            if (playerpos.x > 0)
+            {
+                transform.localScale = new Vector2(-1, 1);
+                rb.velocity = new Vector2(5, rb.velocity.y);
+            }
+        }
         Debug.Log(playerpos);
-        if (playerpos.x < 0)
-        {
-            transform.localScale = new Vector2(1, 1);
-            rb.velocity = new Vector2(-5, rb.velocity.y);
-        }
-        if (playerpos.x > 0)
-        {
-            transform.localScale = new Vector2(-1, 1);
-            rb.velocity = new Vector2(5, rb.velocity.y);
-        }
+        
         if (rb.velocity.x > 0.5f && canJump && walkFrame < 12 || rb.velocity.x < -0.5f && canJump && walkFrame < 12)
         {
             if (walkCountDown > 0)
