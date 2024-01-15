@@ -150,6 +150,7 @@ MonoBehaviour:
   walkCountDown: 0
   walkCountDownReset: 0.04
   maxWalkFrame: 11
+  walkFrame: 0
   walkFrameSprite:
   - {fileID: -1644144812, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
   - {fileID: -1472848005, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
@@ -163,7 +164,13 @@ MonoBehaviour:
   - {fileID: 1558502310, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
   - {fileID: -1122283848, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
   - {fileID: -896675009, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
+  - {fileID: -9180996314697931608, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
+  - {fileID: 1203973355, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
+  - {fileID: -1192633808, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
+  - {fileID: 1886681870, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
+  - {fileID: -333451563, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
   player: {fileID: 6514299262162438563}
+  walkingSoundClip: {fileID: 0}
 --- !u!61 &8354020570635776063
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -269,3 +276,4 @@ MonoBehaviour:
   BulletPrefab: {fileID: 3225629617959731177, guid: 0580bd96f148bc047b92800992b1f6b4, type: 3}
   bulletspawn: {fileID: 9181846401985537271}
   shootingDelay: 1
+  ShootingSound: {fileID: 0}
