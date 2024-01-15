@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 889892809030919010}
   - component: {fileID: 8566536351330613575}
   - component: {fileID: -7577333526411616984}
+  - component: {fileID: 8479843294391046630}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -376,7 +377,7 @@ MonoBehaviour:
   bulletspawn: {fileID: 9181846401985537271}
   shootingDelay: 2
   ShootingSound: {fileID: 8300000, guid: c4a540c2fc62b1d4ba648defc57bf772, type: 3}
---- !u!114 &-9160310166888202952
+--- !u!114 &-7577333526411616984
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -389,6 +390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
+  health: 0
 --- !u!114 &8479843294391046630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,18 +406,7 @@ MonoBehaviour:
   BulletPrefab: {fileID: 2216531731239444273, guid: bf352b7bcf3d90b47a01b483cd85f0ee, type: 3}
   bulletspawn: {fileID: 0}
   shootingDelay: 1
-  ShootingSound: {fileID: 0}
---- !u!114 &-7577333526411616984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7566293991749842667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 945027db61b37ec489647d9ec1af887b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 3
-  health: 0
+  grabpoint: {fileID: 0}
+  rayPoint: {fileID: 0}
+  rayDistance: 0
+  velocity: {x: 1, y: 1}
