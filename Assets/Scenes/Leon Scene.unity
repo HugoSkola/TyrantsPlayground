@@ -714,6 +714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpawn: {fileID: 0}
+  rebelManagerObj: {fileID: 0}
   player: {fileID: 0}
   playerFollower: {fileID: 0}
 --- !u!4 &545258829
@@ -1460,7 +1461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e86f21d62272fb9449a58320e995c268, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  back: {fileID: 0}
+  back: {fileID: 228057292}
 --- !u!1 &1042476529
 GameObject:
   m_ObjectHideFlags: 0

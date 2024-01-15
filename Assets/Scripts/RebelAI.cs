@@ -13,20 +13,23 @@ public class RebelAI : MonoBehaviour
     public float walkCountDown;
     public float walkCountDownReset;
     public int maxWalkFrame;
-    int walkFrame;
+    public int walkFrame;
+    public float aggroRange;
     public Sprite[] walkFrameSprite;
     public SpriteRenderer rebel;
 
     // Start is called before the first frame update
     void Start()
     {
+        walkCountDown = walkCountDownReset;
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void RebelAIController(GameObject player)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        playerObj = player;
+        
     }
+
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -50,16 +53,39 @@ public class RebelAI : MonoBehaviour
     void Update()
     {
         Vector3 playerpos = playerObj.transform.position - transform.position;
+        float distance = Mathf.Sqrt(playerpos.x * playerpos.x + playerpos.y * playerpos.y);
+        if (distance < aggroRange)
+        {
+            if (playerpos.x < 0)
+            {
+                transform.localScale = new Vector2(1, 1);
+                rb.velocity = new Vector2(-5, rb.velocity.y);
+            }
+            if (playerpos.x > 0)
+            {
+                transform.localScale = new Vector2(-1, 1);
+                rb.velocity = new Vector2(5, rb.velocity.y);
+            }
+        }
         Debug.Log(playerpos);
-        if (playerpos.x < 0)
+        
+        if (rb.velocity.x > 0.5f && canJump && walkFrame < 12 || rb.velocity.x < -0.5f && canJump && walkFrame < 12)
         {
-            transform.localScale = new Vector2(1, 1);
-            rb.velocity = new Vector2(-5, rb.velocity.y);
+            if (walkCountDown > 0)
+            {
+                walkCountDown -= Time.deltaTime;
+            }
+            else if (walkCountDown < 0 && walkFrame < maxWalkFrame)
+            {
+                walkCountDown = walkCountDownReset;
+                walkFrame++;
+            }
+            else if (walkFrame < 12)
+            {
+                walkFrame = 0;
+            }
         }
-        if (playerpos.x > 0)
-        {
-            transform.localScale = new Vector2(-1, 1);
-            rb.velocity = new Vector2(5, rb.velocity.y);
-        }
+
+        rebel.sprite = walkFrameSprite[walkFrame];
     }
 }

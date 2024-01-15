@@ -78,8 +78,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1644144812, guid: 4f20a2e2be035b34790fb879fa00ee1f, type: 3}
-  m_Color: {r: 1, g: 0.37421376, b: 0.37421376, a: 1}
+  m_Sprite: {fileID: 141900523, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObj: {fileID: 7566293991749842667, guid: 41503f64ca3c8b14dbd7417971cfc787, type: 3}
-  rebelPos: {fileID: 7932013935823791202}
   ground:
     serializedVersion: 2
     m_Bits: 8
@@ -110,10 +109,23 @@ MonoBehaviour:
   moveSpeed: 5
   canJump: 1
   walkCountDown: 0
-  walkCountDownReset: 0
-  maxWalkFrame: 0
-  walkFrameSprite: []
-  rebel: {fileID: 0}
+  walkCountDownReset: 0.04
+  maxWalkFrame: 11
+  walkFrame: 0
+  walkFrameSprite:
+  - {fileID: 141900523, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: 906134582, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: -627004639, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: 1380663167, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: -467412150, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: -1128552553, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: 813393670, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: 1293086114, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: -328275364, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: 1652931395, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: -1435916866, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: 1413824325, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  rebel: {fileID: 8027208153048804467}
 --- !u!50 &-5320898951665294023
 Rigidbody2D:
   serializedVersion: 4
