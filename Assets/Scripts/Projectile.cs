@@ -13,6 +13,7 @@ public class Projectile : MonoBehaviour
     {
         
         Rigidbody2D pRigidBody = GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
