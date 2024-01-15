@@ -74,10 +74,24 @@ public class PlayerMovement : MonoBehaviour
                 walkFrame = 0;
             }
         }
+        else if (canJump)
+        {
+
+        }
         else
         {
-            walkCountDown = walkCountDownReset;
-            walkFrame = 8;
+            walkFrame = 12;
+            if (walkCountDown < 0 && walkFrame < 16)
+            {
+                walkCountDown = walkCountDownReset;
+                walkFrame++;
+            }
+            else
+            {
+                walkCountDown -= Time.deltaTime;
+            }
+            
+            
         }
 
         player.sprite = walkFrameSprite[walkFrame];
