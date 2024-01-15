@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db5e75b337b4e74786ceef90451a785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eHealth: 1
+  eHealth: 3
   DamageTaken: 1
   spaningbomb: 0
   spawing: {fileID: 0}
