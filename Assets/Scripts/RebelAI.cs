@@ -24,6 +24,11 @@ public class RebelAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
+
 
     private void OnTriggerStay2D(Collider2D collision)
     {
