@@ -68,7 +68,7 @@ public class RebelAI : MonoBehaviour
             }
         }
         Debug.Log(playerpos);
-        
+            
         if (rb.velocity.x > 0.5f && canJump && walkFrame < 12 || rb.velocity.x < -0.5f && canJump && walkFrame < 12)
         {
             if (walkCountDown > 0)

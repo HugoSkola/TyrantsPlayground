@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField]
     int maxHealth = 3;
 
-    int health;
+    public int health;
 
     // Start is called before the first frame update
     void Start()

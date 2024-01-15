@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer player;
     public AudioClip walkingSoundClip;
     private AudioSource audioSource;
+    public AudioClip JumpSoundClip;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
         if (canJump && Input.GetKeyDown(KeyCode.Space))
         {
             move += Vector2.up * jumpHeight;
+            jumpingSound();
         }
         if (rb.velocity.x > 0.5f && canJump && walkFrame < 12 || rb.velocity.x < -0.5f && canJump && walkFrame < 12)
         {
@@ -120,5 +122,13 @@ public class PlayerMovement : MonoBehaviour
         {
             audioSource.PlayOneShot(walkingSoundClip);
         }
+    }
+    void jumpingSound()
+    {
+        if(JumpSoundClip != null && !audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(JumpSoundClip);
+        }
+        
     }
 }
