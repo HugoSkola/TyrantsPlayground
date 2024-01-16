@@ -560,10 +560,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
-  m_InstanceId: 49016
-  m_LocalBounds:
-    m_Center: {x: 0.04125616, y: -0.206815, z: 0}
-    m_Extent: {x: 0.3429198, y: 1.0838351, z: 0}
 --- !u!1001 &8169873541060841180
 PrefabInstance:
   m_ObjectHideFlags: 0
