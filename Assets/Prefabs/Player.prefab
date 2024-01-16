@@ -40,9 +40,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7940871184096972093}
   - {fileID: 8255881130003713934}
   - {fileID: 8765956900385610908}
+  - {fileID: 7940871184096972093}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6514299262162438563
@@ -113,7 +113,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b20c3d7fba39d3d45b9cfdf1706d13a4, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -434,20 +434,21 @@ MonoBehaviour:
   m_SelfShadows: 0
   m_ApplyToSortingLayers: 00000000
   m_ShapePath:
-  - {x: -0.11047095, y: -1.3405566, z: 0}
+  - {x: -0.10381675, y: -1.2906501, z: 0}
   - {x: -0.30166364, y: -0.41536188, z: 0}
   - {x: -0.30166364, y: -0.06036949, z: 0}
   - {x: -0.23980486, y: 0.23122573, z: 0}
-  - {x: -0.11198062, y: 0.43796325, z: 0}
-  - {x: -0.20543236, y: 0.51109076, z: 0}
-  - {x: -0.19731408, y: 0.7957113, z: 0}
-  - {x: 0.033510745, y: 0.93777514, z: 0}
-  - {x: 0.25487012, y: 0.8271668, z: 0}
-  - {x: 0.2336697, y: 0.42355537, z: 0}
-  - {x: 0.4029892, y: 0.23542261, z: 0}
+  - {x: -0.088525, y: 0.41450763, z: 0}
+  - {x: -0.15265727, y: 0.51109076, z: 0}
+  - {x: -0.17972237, y: 0.74880004, z: 0}
+  - {x: 0.04360664, y: 0.8770201, z: 0}
+  - {x: 0.21497029, y: 0.7234274, z: 0}
+  - {x: 0.24934071, y: 0.539587, z: 0}
+  - {x: 0.17781001, y: 0.39961553, z: 0}
+  - {x: 0.3551095, y: 0.24340248, z: 0}
   - {x: 0.38417596, y: -0.59236217, z: 0}
-  - {x: 0.2982772, y: -1.3550034, z: 0}
-  m_ShapePathHash: -1527254141
+  - {x: 0.30493146, y: -1.2884617, z: 0}
+  m_ShapePathHash: 1592876451
   m_Mesh: {fileID: 0}
   m_InstanceId: -149572
   m_LocalBounds:
@@ -559,6 +560,10 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+  m_InstanceId: 49016
+  m_LocalBounds:
+    m_Center: {x: 0.04125616, y: -0.206815, z: 0}
+    m_Extent: {x: 0.3429198, y: 1.0838351, z: 0}
 --- !u!1001 &8169873541060841180
 PrefabInstance:
   m_ObjectHideFlags: 0
