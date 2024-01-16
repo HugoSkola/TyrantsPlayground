@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 8566536351330613575}
   - component: {fileID: -7577333526411616984}
   - component: {fileID: 8479843294391046630}
+  - component: {fileID: 4825036050611294826}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -63,7 +64,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -412,6 +413,45 @@ MonoBehaviour:
   rayPoint: {fileID: 7940871184096972093}
   rayDistance: 0.4
   velocity: {x: 1, y: 1}
+--- !u!114 &4825036050611294826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7566293991749842667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: -0.11047095, y: -1.3405566, z: 0}
+  - {x: -0.30166364, y: -0.41536188, z: 0}
+  - {x: -0.30166364, y: -0.06036949, z: 0}
+  - {x: -0.23980486, y: 0.23122573, z: 0}
+  - {x: -0.11198062, y: 0.43796325, z: 0}
+  - {x: -0.20543236, y: 0.51109076, z: 0}
+  - {x: -0.19731408, y: 0.7957113, z: 0}
+  - {x: 0.033510745, y: 0.93777514, z: 0}
+  - {x: 0.25487012, y: 0.8271668, z: 0}
+  - {x: 0.2336697, y: 0.42355537, z: 0}
+  - {x: 0.4029892, y: 0.23542261, z: 0}
+  - {x: 0.38417596, y: -0.59236217, z: 0}
+  - {x: 0.2982772, y: -1.3550034, z: 0}
+  m_ShapePathHash: -1527254141
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 38794
+  m_LocalBounds:
+    m_Center: {x: 0.050662786, y: -0.20861411, z: 0}
+    m_Extent: {x: 0.35232642, y: 1.1463892, z: 0}
 --- !u!1001 &8169873541060841180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -426,7 +466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 284835729823203666, guid: 78759beba9faa29409e0e7995e94037b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.915
+      value: -1.93
       objectReference: {fileID: 0}
     - target: {fileID: 284835729823203666, guid: 78759beba9faa29409e0e7995e94037b, type: 3}
       propertyPath: m_LocalPosition.y
