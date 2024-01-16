@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3688677878256903928}
   - component: {fileID: 8027208153048804467}
-  - component: {fileID: 3536850924731098129}
   - component: {fileID: -5320898951665294023}
   - component: {fileID: 7207928852007765524}
   - component: {fileID: 4462793910590336288}
-  - component: {fileID: -1963318653137775002}
+  - component: {fileID: 3536850924731098129}
+  - component: {fileID: 8629902428634113565}
+  - component: {fileID: 821213525188395897}
   m_Layer: 0
   m_Name: StandIn Rebel
   m_TagString: Untagged
@@ -89,43 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3536850924731098129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7932013935823791202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28bd83f38ef65994491b4c39d1072951, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerObj: {fileID: 7566293991749842667, guid: 41503f64ca3c8b14dbd7417971cfc787, type: 3}
-  ground:
-    serializedVersion: 2
-    m_Bits: 8
-  jumpHeight: 5
-  moveSpeed: 5
-  canJump: 1
-  walkCountDown: 0
-  walkCountDownReset: 0.04
-  maxWalkFrame: 11
-  walkFrame: 0
-  walkFrameSprite:
-  - {fileID: 141900523, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
-  - {fileID: 906134582, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
-  - {fileID: -627004639, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
-  - {fileID: 1380663167, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
-  - {fileID: -467412150, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
-  - {fileID: -1128552553, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
-  - {fileID: 813393670, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
-  - {fileID: 1293086114, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
-  - {fileID: -328275364, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
-  - {fileID: 1652931395, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
-  - {fileID: -1435916866, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
-  - {fileID: 1413824325, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
-  rebel: {fileID: 8027208153048804467}
 --- !u!50 &-5320898951665294023
 Rigidbody2D:
   serializedVersion: 4
@@ -243,7 +207,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.99, y: 0.13}
   m_EdgeRadius: 0
---- !u!114 &-1963318653137775002
+--- !u!114 &3536850924731098129
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,8 +216,61 @@ MonoBehaviour:
   m_GameObject: {fileID: 7932013935823791202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53dca11f4d6412641810653a7775a674, type: 3}
+  m_Script: {fileID: 11500000, guid: 28bd83f38ef65994491b4c39d1072951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eHealth: 1
+  playerObj: {fileID: 7566293991749842667, guid: 41503f64ca3c8b14dbd7417971cfc787, type: 3}
+  ground:
+    serializedVersion: 2
+    m_Bits: 8
+  jumpHeight: 5
+  moveSpeed: 5
+  canJump: 1
+  walkCountDown: 0
+  walkCountDownReset: 0.04
+  maxWalkFrame: 11
+  walkFrame: 0
+  aggroRange: 0
+  walkFrameSprite:
+  - {fileID: 141900523, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: 906134582, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: -627004639, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: 1380663167, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: -467412150, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: -1128552553, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: 813393670, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: 1293086114, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: -328275364, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: 1652931395, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: -1435916866, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  - {fileID: 1413824325, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
+  rebel: {fileID: 8027208153048804467}
+--- !u!114 &8629902428634113565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7932013935823791202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db5e75b337b4e74786ceef90451a785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eHealth: 3
   DamageTaken: 1
+  spaningbomb: 0
+  spawing: {fileID: 0}
+--- !u!114 &821213525188395897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7932013935823791202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0b73d5a228b5941821ccfb7c485c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hurtAmount: 1
