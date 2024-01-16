@@ -13,10 +13,10 @@ public class grabobject : MonoBehaviour
     [SerializeField]
     Transform bulletspawn;
 
-    [SerializeField]
-    float shootingDelay = 1f;
+    
+    //public float shootingDelay = 1f;
 
-    float nextFireTime = 0f;
+    //float nextFireTime = 0f;
 
     [SerializeField]
     private Transform grabpoint;
@@ -46,8 +46,9 @@ public class grabobject : MonoBehaviour
             if (Keyboard.current.qKey.wasPressedThisFrame && grabbedObject == null)
             {
                 grabbedObject = hitInfo.collider.gameObject;
-                grabbedObject.GetComponent<Rigidbody2D>().isKinematic = true;
-                grabbedObject.transform.position = grabpoint.position;
+                Rigidbody2D rbObject = grabbedObject.GetComponent<Rigidbody2D>();
+                rbObject.isKinematic = true;
+                rbObject.MovePosition(grabpoint.position);
                 grabbedObject.transform.SetParent(transform);
             }
 

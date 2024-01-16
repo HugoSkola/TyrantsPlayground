@@ -18,8 +18,8 @@ public class Door : MonoBehaviour
 
     [Header("Audio")]
     public AudioClip DoorOpenSound;
-    [SerializeField] private AudioSource doorOpenAudioSource;
-    [SerializeField] private float openDelay = 0;
+    private AudioSource doorOpenAudioSource;
+    //[SerializeField] private float openDelay = 0;
     /*/
     [Space(10)]
     [SerializeField] private AudioSource doorCloseAudioSource = null;
