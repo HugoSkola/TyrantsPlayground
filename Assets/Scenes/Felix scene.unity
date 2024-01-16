@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 34754618}
   - component: {fileID: 34754617}
   - component: {fileID: 34754616}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (64)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 104659868}
   - component: {fileID: 104659867}
   - component: {fileID: 104659866}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -596,7 +596,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -828,7 +828,7 @@ GameObject:
   - component: {fileID: 199015308}
   - component: {fileID: 199015307}
   - component: {fileID: 199015306}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -900,7 +900,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -958,7 +958,7 @@ GameObject:
   - component: {fileID: 240981638}
   - component: {fileID: 240981637}
   - component: {fileID: 240981636}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (62)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1030,7 +1030,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1172,7 +1172,7 @@ GameObject:
   - component: {fileID: 332914386}
   - component: {fileID: 332914385}
   - component: {fileID: 332914384}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1244,7 +1244,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1715,7 +1715,7 @@ GameObject:
   - component: {fileID: 373413994}
   - component: {fileID: 373413993}
   - component: {fileID: 373413992}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1787,7 +1787,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1845,7 +1845,7 @@ GameObject:
   - component: {fileID: 386184064}
   - component: {fileID: 386184063}
   - component: {fileID: 386184062}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1917,7 +1917,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2331,7 +2331,7 @@ GameObject:
   - component: {fileID: 516762053}
   - component: {fileID: 516762052}
   - component: {fileID: 516762051}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2403,7 +2403,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2461,7 +2461,7 @@ GameObject:
   - component: {fileID: 521785496}
   - component: {fileID: 521785495}
   - component: {fileID: 521785494}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2533,7 +2533,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2851,7 +2851,7 @@ GameObject:
   - component: {fileID: 608133209}
   - component: {fileID: 608133208}
   - component: {fileID: 608133207}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (63)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2923,7 +2923,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2981,7 +2981,7 @@ GameObject:
   - component: {fileID: 629531504}
   - component: {fileID: 629531503}
   - component: {fileID: 629531502}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3053,7 +3053,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3325,7 +3325,7 @@ GameObject:
   - component: {fileID: 794614326}
   - component: {fileID: 794614325}
   - component: {fileID: 794614324}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3397,7 +3397,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3455,7 +3455,7 @@ GameObject:
   - component: {fileID: 825247973}
   - component: {fileID: 825247972}
   - component: {fileID: 825247971}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3527,7 +3527,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3715,7 +3715,7 @@ GameObject:
   - component: {fileID: 903766335}
   - component: {fileID: 903766334}
   - component: {fileID: 903766333}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3787,7 +3787,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3845,7 +3845,7 @@ GameObject:
   - component: {fileID: 921611442}
   - component: {fileID: 921611441}
   - component: {fileID: 921611440}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3917,7 +3917,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4105,7 +4105,7 @@ GameObject:
   - component: {fileID: 960446419}
   - component: {fileID: 960446418}
   - component: {fileID: 960446417}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4177,7 +4177,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4235,7 +4235,7 @@ GameObject:
   - component: {fileID: 1017773491}
   - component: {fileID: 1017773490}
   - component: {fileID: 1017773489}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4307,7 +4307,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4365,7 +4365,7 @@ GameObject:
   - component: {fileID: 1039007037}
   - component: {fileID: 1039007036}
   - component: {fileID: 1039007035}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4437,7 +4437,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4755,7 +4755,7 @@ GameObject:
   - component: {fileID: 1254322736}
   - component: {fileID: 1254322735}
   - component: {fileID: 1254322734}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4827,7 +4827,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4885,7 +4885,7 @@ GameObject:
   - component: {fileID: 1276844377}
   - component: {fileID: 1276844376}
   - component: {fileID: 1276844375}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4957,7 +4957,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5145,7 +5145,7 @@ GameObject:
   - component: {fileID: 1368778531}
   - component: {fileID: 1368778530}
   - component: {fileID: 1368778529}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5217,7 +5217,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5795,7 +5795,7 @@ GameObject:
   - component: {fileID: 1460266349}
   - component: {fileID: 1460266348}
   - component: {fileID: 1460266347}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5867,7 +5867,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6055,7 +6055,7 @@ GameObject:
   - component: {fileID: 1538295040}
   - component: {fileID: 1538295039}
   - component: {fileID: 1538295038}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6127,7 +6127,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6185,7 +6185,7 @@ GameObject:
   - component: {fileID: 1562913170}
   - component: {fileID: 1562913169}
   - component: {fileID: 1562913168}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6257,7 +6257,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6445,7 +6445,7 @@ GameObject:
   - component: {fileID: 1613958358}
   - component: {fileID: 1613958357}
   - component: {fileID: 1613958356}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6517,7 +6517,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6705,7 +6705,7 @@ GameObject:
   - component: {fileID: 1678940246}
   - component: {fileID: 1678940245}
   - component: {fileID: 1678940244}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6777,7 +6777,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6835,7 +6835,7 @@ GameObject:
   - component: {fileID: 1702290277}
   - component: {fileID: 1702290276}
   - component: {fileID: 1702290275}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6907,7 +6907,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7095,7 +7095,7 @@ GameObject:
   - component: {fileID: 1738829789}
   - component: {fileID: 1738829788}
   - component: {fileID: 1738829787}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7167,7 +7167,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7355,7 +7355,7 @@ GameObject:
   - component: {fileID: 1803598900}
   - component: {fileID: 1803598899}
   - component: {fileID: 1803598898}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (61)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7427,7 +7427,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7485,7 +7485,7 @@ GameObject:
   - component: {fileID: 1827428853}
   - component: {fileID: 1827428852}
   - component: {fileID: 1827428851}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (65)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7557,7 +7557,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8005,7 +8005,7 @@ GameObject:
   - component: {fileID: 1906782204}
   - component: {fileID: 1906782203}
   - component: {fileID: 1906782202}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8077,7 +8077,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8265,7 +8265,7 @@ GameObject:
   - component: {fileID: 1931133144}
   - component: {fileID: 1931133143}
   - component: {fileID: 1931133142}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8337,7 +8337,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8655,7 +8655,7 @@ GameObject:
   - component: {fileID: 2020523862}
   - component: {fileID: 2020523861}
   - component: {fileID: 2020523860}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8727,7 +8727,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8785,7 +8785,7 @@ GameObject:
   - component: {fileID: 2031016469}
   - component: {fileID: 2031016468}
   - component: {fileID: 2031016467}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8857,7 +8857,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8962,7 +8962,7 @@ GameObject:
   - component: {fileID: 2083000332}
   - component: {fileID: 2083000331}
   - component: {fileID: 2083000330}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9034,7 +9034,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9092,7 +9092,7 @@ GameObject:
   - component: {fileID: 2085108021}
   - component: {fileID: 2085108020}
   - component: {fileID: 2085108019}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NY platform-export (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9164,7 +9164,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9ac487a2493a1154db24bf1e6e6320c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
