@@ -68,7 +68,7 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: -15
+    value: -12
   tint:
     overrideState: 0
     value: 0
@@ -763,7 +763,7 @@ MonoBehaviour:
       - 0.984375
       - 0.9921875
   hueVsHueCurve:
-    overrideState: 0
+    overrideState: 1
     value:
       curve:
         serializedVersion: 2
