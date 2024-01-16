@@ -13,10 +13,10 @@ public class grabobject : MonoBehaviour
     [SerializeField]
     Transform bulletspawn;
 
-    [SerializeField]
-    float shootingDelay = 1f;
+    
+    //public float shootingDelay = 1f;
 
-    float nextFireTime = 0f;
+    //float nextFireTime = 0f;
 
     [SerializeField]
     private Transform grabpoint;
