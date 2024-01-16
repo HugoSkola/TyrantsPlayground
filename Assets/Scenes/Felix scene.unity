@@ -1079,7 +1079,7 @@ Transform:
   m_GameObject: {fileID: 408196527}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.2, y: -3.53, z: -0.17822377}
+  m_LocalPosition: {x: -4.94, y: -3.96, z: -0.17822377}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4510,7 +4510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpawn: {fileID: 408196528}
-  rebelManagerObj: {fileID: 0}
   player: {fileID: 7566293991749842667, guid: 41503f64ca3c8b14dbd7417971cfc787, type: 3}
   playerFollower: {fileID: 163841691}
 --- !u!4 &2060470552

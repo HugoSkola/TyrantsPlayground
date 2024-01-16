@@ -35,16 +35,9 @@ public class RebelManager : MonoBehaviour
     void Update()
     {
         // Randomly decides whether to spawn enemies to the left or right of the player
-        LeftOrRight = Random.Range(1, 3);
+        
 
-        if (LeftOrRight == 1)
-        {
-            spawnLocation = new Vector3(player.transform.position.x - 15, player.transform.position.y + 5, 0);
-        }
-        else
-        {
-            spawnLocation = new Vector3(player.transform.position.x + 15, player.transform.position.y + 5, 0);
-        }
+        
         
         // Spawns 5 rebels every 30 seconds, can be changed to liking in Unity
         if (!rebelsExist)
