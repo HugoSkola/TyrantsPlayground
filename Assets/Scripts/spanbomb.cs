@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -14,6 +15,8 @@ public class spanbomb : MonoBehaviour
     [SerializeField]
     int spaningbomb = 0;
     public GameObject spawing;
+    [SerializeField] public GameObject objects;
+    [SerializeField] public Vector2 spawnPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +30,7 @@ public class spanbomb : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Update()
+    void Update()
     {
 
          SpawnController spawingconect = spawing.GetComponent<SpawnController>();
@@ -40,23 +43,16 @@ public class spanbomb : MonoBehaviour
         }
         OnDestroy();
     }
-    public void eTakeDamage()
+    public void bombteleport()
     {
-        SpawnController spawingconect = spawing.GetComponent<SpawnController>();
-        if (spaningbomb == 3)
-        {
-
-            Console.WriteLine("spaningbomb");
-            spawingconect.SpawnObject();
-
-        }
+      
         eHealth -= DamageTaken;
 
-        if (eHealth > 0)
+        if (eHealth < 0)
         {
             spaningbomb += 1;
+            Instantiate(objects, new Vector3(-1, -14, 1), Quaternion.identity);
 
-         
         }
     }
     void OnDestroy()

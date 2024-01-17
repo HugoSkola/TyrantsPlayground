@@ -3867,7 +3867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eHealth: 1
   DamageTaken: 1
-  spaningbomb: 3
+  spaningbomb: 1
   spawing: {fileID: 5526578776725114566, guid: 2f55ae624cd1e6c4ca813ed3dc543a19, type: 3}
 --- !u!114 &631433889
 MonoBehaviour:
