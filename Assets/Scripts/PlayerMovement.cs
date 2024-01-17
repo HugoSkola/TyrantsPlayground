@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
             jumpingSound();
         }
         // When player is walking
-        if (rb.velocity.x > 0.5f && canJump && walkFrame < 12 || rb.velocity.x < -0.5f && canJump && walkFrame < 12)
+        if (rb.velocity.x > 0.5f && canJump && walkFrame < 12 || rb.velocity.x < -0.5f && canJump && walkFrame < 12 )
         {
             if (walkCountDown > 0)
             {
@@ -84,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         // When player is idle
-        else if (canJump && walkFrame < 12 || canJump && walkFrame > 16)
+        else if (canJump && walkFrame < 12 && rb.velocity.x == 0f || canJump && walkFrame > 16 && rb.velocity.x == 0f)
         {
             if (rb.velocity.x == 0f)
             {
@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
                     walkCountDown = walkCountDownReset;
                     walkFrame++;
                 }
-                else if (walkFrame !< 24)
+                else if (walkFrame > 23)
                 {
                     walkFrame = 17;
                     walkCountDown = walkCountDownReset;
@@ -131,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 walkCountDown -= Time.deltaTime;
-            }
+            }   
         }
         else
         {
