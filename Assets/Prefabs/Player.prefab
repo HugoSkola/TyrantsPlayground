@@ -460,10 +460,17 @@ MonoBehaviour:
   - {x: 0.047650337, y: -0.29127336, z: 0}
   m_ShapePathHash: -282186607
   m_Mesh: {fileID: 0}
+<<<<<<< HEAD
+  m_InstanceId: 35188
+  m_LocalBounds:
+    m_Center: {x: 0.04125616, y: -0.206815, z: 0}
+    m_Extent: {x: 0.3429198, y: 1.0838351, z: 0}
+=======
   m_InstanceId: 75154
   m_LocalBounds:
     m_Center: {x: 0.04925558, y: 0.13421369, z: 0}
     m_Extent: {x: 0.3194438, y: 0.6735606, z: 0}
+>>>>>>> 509d0dbc3cf07f0c48b56a08b7f0a6de458f6180
 --- !u!1 &8529340653017064733
 GameObject:
   m_ObjectHideFlags: 0
