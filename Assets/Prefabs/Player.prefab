@@ -362,6 +362,14 @@ MonoBehaviour:
   - {fileID: -1192633808, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
   - {fileID: 1886681870, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
   - {fileID: -333451563, guid: 4e8048458521ba045bb89863c9dfb816, type: 3}
+  - {fileID: 1008025911, guid: f2d4b0a9e572ffe48bfa483597c5c623, type: 3}
+  - {fileID: -1531924314, guid: f2d4b0a9e572ffe48bfa483597c5c623, type: 3}
+  - {fileID: 1637757832, guid: f2d4b0a9e572ffe48bfa483597c5c623, type: 3}
+  - {fileID: -751528978, guid: f2d4b0a9e572ffe48bfa483597c5c623, type: 3}
+  - {fileID: 1188241667, guid: f2d4b0a9e572ffe48bfa483597c5c623, type: 3}
+  - {fileID: -2132957944, guid: f2d4b0a9e572ffe48bfa483597c5c623, type: 3}
+  - {fileID: -1517223992, guid: f2d4b0a9e572ffe48bfa483597c5c623, type: 3}
+  - {fileID: -1428060799, guid: f2d4b0a9e572ffe48bfa483597c5c623, type: 3}
   player: {fileID: 6514299262162438563}
   walkingSoundClip: {fileID: 8300000, guid: 38517cf24cae4d741ac86128a5613487, type: 3}
   JumpSoundClip: {fileID: 8300000, guid: de33d40dab756d04a81fb75612b494ba, type: 3}
@@ -452,14 +460,10 @@ MonoBehaviour:
   - {x: 0.047650337, y: -0.29127336, z: 0}
   m_ShapePathHash: -282186607
   m_Mesh: {fileID: 0}
-  m_InstanceId: 72628
+  m_InstanceId: 75154
   m_LocalBounds:
     m_Center: {x: 0.04925558, y: 0.13421369, z: 0}
     m_Extent: {x: 0.3194438, y: 0.6735606, z: 0}
-  m_InstanceId: -149572
-  m_LocalBounds:
-    m_Center: {x: 0.050662786, y: -0.20861411, z: 0}
-    m_Extent: {x: 0.35232642, y: 1.1463892, z: 0}
 --- !u!1 &8529340653017064733
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +537,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1141658329, guid: 9153053b5a1f28e44897e34a71047d9d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
