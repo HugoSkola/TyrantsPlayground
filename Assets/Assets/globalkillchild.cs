@@ -29,7 +29,7 @@ public class globalkillchild : MonoBehaviour
 
         void PerformAction()
         {
-            spaningbomb += 1;// Your action or code to execute when the condition is met
+          
             Debug.Log("Performing action when GameObject is destroyed.");
         }
     }
