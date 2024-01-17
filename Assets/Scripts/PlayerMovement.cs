@@ -86,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
         // When player is idle
         else if (canJump && walkFrame < 12 || canJump && walkFrame > 16)
         {
-            if (rb.velocity.x < 0.5f && rb.velocity.x > -0.5f)
+            if (rb.velocity.x == 0f)
             {
                 if (walkCountDown > 0)
                 {
@@ -132,8 +132,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 walkCountDown -= Time.deltaTime;
             }
-            
-            
         }
         else
         {
