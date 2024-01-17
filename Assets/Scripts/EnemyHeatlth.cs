@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Xml.Linq;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -11,15 +10,13 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField]
     float DamageTaken = 1f;
-
-    [SerializeField] public GameObject objects;
+    [SerializeField] public GameObject objects; 
 
     [SerializeField]
     int spaningbomb = 0;
     public GameObject spawing;
-  
-    [SerializeField] public Vector2 spawnPoint;
 
+    [SerializeField] public Vector2 spawnPoint;
 
 
     // Start is called before the first frame update
