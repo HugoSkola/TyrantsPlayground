@@ -16,15 +16,20 @@ public class spanbomb : MonoBehaviour
     public GameObject spawing;
 
     // Start is called before the first frame update
-    public void Start()
+    void Start()
     {
+       
+        {
+            OnDestroy();
 
+        }
 
     }
 
     // Update is called once per frame
     public void Update()
     {
+
          SpawnController spawingconect = spawing.GetComponent<SpawnController>();
         if (spaningbomb == 3)
         {
@@ -33,6 +38,7 @@ public class spanbomb : MonoBehaviour
             spawingconect.SpawnObject();
             spaningbomb = 0;
         }
+        OnDestroy();
     }
     public void eTakeDamage()
     {
@@ -53,4 +59,28 @@ public class spanbomb : MonoBehaviour
          
         }
     }
+    void OnDestroy()
+    {
+        // This code will be executed when the GameObject is destroyed
+
+        // Example: Check if a certain condition is met before performing an action
+        if (ShouldPerformAction())
+        {
+            PerformAction();
+        }
+    }
+
+    bool ShouldPerformAction()
+    {
+        // Your condition logic here
+        // For example, you might check a variable, state, or other conditions
+        return true; // Replace this with your condition
+    }
+
+    void PerformAction()
+    {
+        spaningbomb += 1;// Your action or code to execute when the condition is met
+        Debug.Log("Performing action when GameObject is destroyed.");
+    }
+
 }

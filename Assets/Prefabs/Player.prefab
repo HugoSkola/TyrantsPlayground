@@ -450,10 +450,10 @@ MonoBehaviour:
   - {x: 0.30493146, y: -1.2884617, z: 0}
   m_ShapePathHash: 1592876451
   m_Mesh: {fileID: 0}
-  m_InstanceId: -149572
+  m_InstanceId: 35188
   m_LocalBounds:
-    m_Center: {x: 0.050662786, y: -0.20861411, z: 0}
-    m_Extent: {x: 0.35232642, y: 1.1463892, z: 0}
+    m_Center: {x: 0.04125616, y: -0.206815, z: 0}
+    m_Extent: {x: 0.3429198, y: 1.0838351, z: 0}
 --- !u!1 &8529340653017064733
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,10 +560,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
-  m_InstanceId: 49016
-  m_LocalBounds:
-    m_Center: {x: 0.04125616, y: -0.206815, z: 0}
-    m_Extent: {x: 0.3429198, y: 1.0838351, z: 0}
 --- !u!1001 &8169873541060841180
 PrefabInstance:
   m_ObjectHideFlags: 0
