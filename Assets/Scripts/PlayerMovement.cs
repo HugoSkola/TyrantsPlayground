@@ -65,27 +65,51 @@ public class PlayerMovement : MonoBehaviour
             move += Vector2.up * jumpHeight;
             jumpingSound();
         }
+        // When player is walking
         if (rb.velocity.x > 0.5f && canJump && walkFrame < 12 || rb.velocity.x < -0.5f && canJump && walkFrame < 12)
         {
             if (walkCountDown > 0)
             {
                 walkCountDown -= Time.deltaTime;
             }
-            else if (walkCountDown < 0 && walkFrame < maxWalkFrame)
+            else if (walkCountDown < 0 && walkFrame < 11)
             {
                 walkCountDown = walkCountDownReset;
                 walkFrame++;
             }
-            else if (walkFrame < 12)
+            else if (walkFrame == 11)
+            {
+                walkFrame = 0;
+                walkCountDown = walkCountDownReset;
+            }
+        }
+        // When player is idle
+        else if (canJump && walkFrame < 12 || canJump && walkFrame > 16)
+        {
+            if (rb.velocity.x == 0f)
+            {
+                if (walkCountDown > 0)
+                {
+                    walkCountDown -= Time.deltaTime;
+                }
+                else if (walkCountDown < 0 && walkFrame < 24)
+                {
+                    walkCountDown = walkCountDownReset;
+                    walkFrame++;
+                }
+                else if (walkFrame !< 24)
+                {
+                    walkFrame = 17;
+                    walkCountDown = walkCountDownReset;
+                }
+            }
+            else
             {
                 walkFrame = 0;
             }
         }
-        else if (canJump && walkFrame < 12)
-        {
-            walkFrame = 0;
-        }
-        else
+        // When player is jumping
+        else if (!canJump)
         {
             if (walkFrame < 12)
             {
@@ -108,8 +132,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 walkCountDown -= Time.deltaTime;
             }
-            
-            
+        }
+        else
+        {
+            walkFrame = 0;
         }
 
         player.sprite = walkFrameSprite[walkFrame];
