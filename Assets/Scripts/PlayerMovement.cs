@@ -65,6 +65,10 @@ public class PlayerMovement : MonoBehaviour
             move += Vector2.up * jumpHeight;
             jumpingSound();
         }
+
+        rb.velocity = move;
+
+
         // When player is walking
         if (rb.velocity.x > 0.5f && canJump && (walkFrame < 12 || walkFrame > 16) || rb.velocity.x < -0.5f && canJump && (walkFrame < 12 || walkFrame > 16))
         {
@@ -104,16 +108,27 @@ public class PlayerMovement : MonoBehaviour
         }
         
         // When player is jumping
-        else
+        if (!canJump)
         {
 
-            if (walkCountDown < 0 && walkFrame < 16 && !canJump)
+            if (walkCountDown < 0 && (walkFrame < 16 || walkFrame > 16))
             {
                 walkCountDown = walkCountDownReset;
                 walkFrame++;
                 Debug.Log("walkframe increase");
             }
-            else if (walkCountDown < 0 && walkFrame > 11 && canJump)
+            else
+            {
+                walkCountDown -= Time.deltaTime;
+            }
+            
+            
+            
+               
+        }
+        else if (canJump && (walkFrame > 11 && walkFrame < 17))
+        {
+            if (walkCountDown < 0 && (walkFrame > 11 && walkFrame < 17) && canJump)
             {
                 walkFrame--;
                 Debug.Log("walkframe decrease");
@@ -123,15 +138,12 @@ public class PlayerMovement : MonoBehaviour
             {
                 walkCountDown -= Time.deltaTime;
             }
-            
-            
-               
         }
         
 
         player.sprite = walkFrameSprite[walkFrame];
 
-        rb.velocity = move;
+        
     }
     void walkingSound()
     {
