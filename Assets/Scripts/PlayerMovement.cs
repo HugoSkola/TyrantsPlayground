@@ -52,13 +52,19 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector2(1, 1);
             move += Vector2.left * moveSpeed;
-            walkingSound();
+            if (canJump)
+            {
+                walkingSound();
+            }
         }
         if (Input.GetKey(KeyCode.D))
         {
             transform.localScale = new Vector2(-1, 1);
             move += Vector2.right * moveSpeed;
-            walkingSound();
+            if (canJump)
+            {
+                walkingSound();
+            }
         }
         if (canJump && Input.GetKeyDown(KeyCode.Space))
         {
