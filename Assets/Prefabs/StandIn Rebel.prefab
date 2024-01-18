@@ -45,7 +45,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7932013935823791202}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -230,7 +230,7 @@ MonoBehaviour:
   walkCountDownReset: 0.04
   maxWalkFrame: 11
   walkFrame: 0
-  aggroRange: 0
+  aggroRange: 10
   walkFrameSprite:
   - {fileID: 141900523, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
   - {fileID: 906134582, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
@@ -259,8 +259,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eHealth: 3
   DamageTaken: 1
+  objects: {fileID: 0}
   spaningbomb: 0
   spawing: {fileID: 0}
+  spawnPoint: {x: 0, y: 0}
 --- !u!114 &821213525188395897
 MonoBehaviour:
   m_ObjectHideFlags: 0

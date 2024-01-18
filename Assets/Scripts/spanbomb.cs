@@ -37,7 +37,7 @@ public class spanbomb : MonoBehaviour
         if (spaningbomb == 3)
         {
 
-            Console.WriteLine("spaningbomb");
+            Console.WriteLine("spawningbomb");
             spawingconect.SpawnObject();
             spaningbomb = 0;
         }

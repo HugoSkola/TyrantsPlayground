@@ -98,4 +98,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objects: {fileID: 5526578776725114566}
-  spawnPoint: {x: 0, y: 0}
+  spawnPoint: {x: 10, y: 0}
