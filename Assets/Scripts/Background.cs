@@ -6,7 +6,7 @@ public class Background : MonoBehaviour
 {
 
     public GameObject playerCamera;
-    public float moveDivision;
+    public float moveMult;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +16,7 @@ public class Background : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = playerCamera.transform.position / moveDivision;
+        transform.position = playerCamera.transform.position * moveMult;
 
 
     }
