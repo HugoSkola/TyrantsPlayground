@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -17,9 +18,9 @@ public class PlayerHealth : MonoBehaviour
 
     public void Hurt(int amount)
     {
-        
+
         health -= amount;
-        if(health <= 0)
+        if (health <= 0)
         {
             GameOver();
         }
@@ -27,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
 
     void GameOver()
     {
-        Application.Quit(); 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Laddar scener e
     }
 }
                 
