@@ -113,7 +113,7 @@ MonoBehaviour:
   - {fileID: 1572744514, guid: 0fbb0cf0b0576d94bbba79d1ccb6ac1f, type: 3}
   doorType: {fileID: 7523923093929246093}
   door: {fileID: 0}
-  DoorOpenSound: {fileID: 0}
+  DoorOpenSound: {fileID: 8300000, guid: 0d36943b908b6cf42940ce4fa42c9bd9, type: 3}
   doorOpenAudioSource: {fileID: 0}
   openDelay: 0
 --- !u!61 &2945070714210140278

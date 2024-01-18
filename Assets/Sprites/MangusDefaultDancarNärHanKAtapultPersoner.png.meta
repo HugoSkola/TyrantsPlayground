@@ -1,0 +1,1064 @@
+fileFormatVersion: 2
+guid: 59881f2bbc3bb2b449f313a48c37812a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 775
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7a718fa8794f7439046fc3911a5028
+      internalID: -338382247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_1"
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 775
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2121291e9f6878d4f9ec8b4871b4253f
+      internalID: 1734681311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_2"
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 775
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a53b81b8e15714e87e8c1ae8c0ff11
+      internalID: 1411570453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_3"
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 775
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6adf61d74e8d44c942730cee7fc632
+      internalID: 1394816064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_4"
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 775
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab88a184e682e44abe2385c22ae1d58
+      internalID: 1490535802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_5"
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 775
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbd7dd6999fe2c43960842a07d1d065
+      internalID: -24095382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_6"
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 775
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a39d33a8837d5e4db3fa87bf76c1b10
+      internalID: 1274807220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_7"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 620
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aef8771eb0c42b4aad69e4c77cbbdd2
+      internalID: -2032174254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_8"
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 620
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2853365ae6f6742ab70d180d9a5b8f
+      internalID: 1114757003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_9"
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 620
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e9700dde032aa49ac9e0e2290d6fb9
+      internalID: 2141844841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_10"
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 620
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd56edede650d341acd85e7db3c3122
+      internalID: -1248552869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_11"
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 620
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08934e58242ac1a4880ceb947beab42b
+      internalID: 2107196061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_12"
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 620
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7470d8ed579c1ce4ea57ced9d44d2cd2
+      internalID: 1268088213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_13"
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 620
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612c9811d03a9654881b15a5db000988
+      internalID: 1134483662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_14"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 465
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e2767f0dcd0aa4284632b4291a356a
+      internalID: -1349334997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_15"
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 465
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0548cb15cb2b6f4b9811b5a3c93223b
+      internalID: -1959933281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_16"
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 465
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16bdda070471ed94e86443470d464314
+      internalID: -482986037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_17"
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 465
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a049a77f51fcc04983c9255d609c76f
+      internalID: 1151355402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_18"
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 465
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39fed9f007f50524aa934f406ce888e8
+      internalID: -1815472517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_19"
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 465
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048fcf55f8b741140845cc7b9f64e098
+      internalID: -21980450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_20"
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 465
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88842c18d484f2f47b042b3e1b4084a8
+      internalID: 758726383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_21"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc46e58ec159a6449c077e7f81ebd1d
+      internalID: -1904212257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_22"
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 310
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f56143b3ebd3e4f95a8d57c9eb71b0
+      internalID: -1477946521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_23"
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 310
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2ea623fb77b284abfbdc4b4e43298f
+      internalID: -981183911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_24"
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 310
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62cf0ed68c6858342848a61ac8e9ee95
+      internalID: -622046224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_25"
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 310
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777729d0aeb2b4b40b84fafb233835a6
+      internalID: 2116319115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_26"
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 310
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84c364f554600f42a06a8cebc11d93e
+      internalID: 209023035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_27"
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 310
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cbd98ee7084614887486efa750af85
+      internalID: 783569752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_28"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 155
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2037d5136625bdd43b5eb8f41cd37e9b
+      internalID: -967161422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_29"
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 155
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9654b3ebad5d25f4a97355f0838ae12c
+      internalID: -1462328643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_30"
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 155
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51854c1a6c8120547b5f2f749c2273c9
+      internalID: 1182484325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_31"
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 155
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3871add4e7934c84ca96ddb4f1757142
+      internalID: -1027388150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_32"
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 155
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5665305f8f4108f479a63f7a02fcde93
+      internalID: -1905398966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_33"
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 155
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a927004d90df944bd95b7a95b154d2
+      internalID: 1264133038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_34"
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 155
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd7679c85d28ff49a2c369b8c1320e4
+      internalID: 1465452788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_35"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433101432e127784bbe5da2c8675aeed
+      internalID: 1406243161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_36"
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c57824a15709949975b9cf1ce68f0d
+      internalID: 1399805724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_37"
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 0
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa52769341c11e9468d8b721ea1a53a7
+      internalID: 2066732534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_38"
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 0
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9c6008c28bceb44a82590c1d47b267
+      internalID: 1857423556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_39"
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 0
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7cad5f0c48ca641b812d6a29bea18e
+      internalID: -1552374220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_40"
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 0
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675b9581b29e4944d8825328361cefb1
+      internalID: 421076047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MangusDefaultDancarN\xE4rHanKAtapultPersoner_41"
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 0
+        width: 254
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2fcd75b7c209943ac9ab3e067dd9db
+      internalID: 607172414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_0": -338382247
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_1": 1734681311
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_10": -1248552869
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_11": 2107196061
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_12": 1268088213
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_13": 1134483662
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_14": -1349334997
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_15": -1959933281
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_16": -482986037
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_17": 1151355402
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_18": -1815472517
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_19": -21980450
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_2": 1411570453
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_20": 758726383
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_21": -1904212257
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_22": -1477946521
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_23": -981183911
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_24": -622046224
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_25": 2116319115
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_26": 209023035
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_27": 783569752
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_28": -967161422
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_29": -1462328643
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_3": 1394816064
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_30": 1182484325
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_31": -1027388150
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_32": -1905398966
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_33": 1264133038
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_34": 1465452788
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_35": 1406243161
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_36": 1399805724
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_37": 2066732534
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_38": 1857423556
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_39": -1552374220
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_4": 1490535802
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_40": 421076047
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_41": 607172414
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_5": -24095382
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_6": 1274807220
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_7": -2032174254
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_8": 1114757003
+      "MangusDefaultDancarN\xE4rHanKAtapultPersoner_9": 2141844841
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

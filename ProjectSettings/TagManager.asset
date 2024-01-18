@@ -13,8 +13,8 @@ TagManager:
   - UI
   - objects
   - Player
-  - 
-  - 
+  - Post Processing
+  - npc
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround
+    uniqueID: 3062986921
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

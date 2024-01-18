@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer player;
     public AudioClip walkingSoundClip;
     private AudioSource audioSource;
+    public AudioClip JumpSoundClip;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,68 +52,110 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector2(1, 1);
             move += Vector2.left * moveSpeed;
-            walkingSound();
+            if (canJump)
+            {
+                walkingSound();
+            }
         }
         if (Input.GetKey(KeyCode.D))
         {
             transform.localScale = new Vector2(-1, 1);
             move += Vector2.right * moveSpeed;
-            walkingSound();
+            if (canJump)
+            {
+                walkingSound();
+            }
         }
         if (canJump && Input.GetKeyDown(KeyCode.Space))
         {
             move += Vector2.up * jumpHeight;
+            jumpingSound();
         }
-        if (rb.velocity.x > 0.5f && canJump && walkFrame < 12 || rb.velocity.x < -0.5f && canJump && walkFrame < 12)
+
+        rb.velocity = move;
+
+        // When player is jumping
+        if (!canJump)
         {
-            if (walkCountDown > 0)
-            {
-                walkCountDown -= Time.deltaTime;
-            }
-            else if (walkCountDown < 0 && walkFrame < maxWalkFrame)
-            {
-                walkCountDown = walkCountDownReset;
-                walkFrame++;
-            }
-            else if (walkFrame < 12)
-            {
-                walkFrame = 0;
-            }
-        }
-        else if (canJump && walkFrame < 12)
-        {
-            walkFrame = 0;
-        }
-        else
-        {
-            if (walkFrame < 12)
+            if (walkFrame > 16 || walkFrame < 12)
             {
                 walkFrame = 12;
             }
-            else if (walkCountDown < 0 && walkFrame < 16 && !canJump)
+
+            if (walkCountDown < 0 && (walkFrame < 16 || walkFrame > 16))
             {
                 walkCountDown = walkCountDownReset;
                 walkFrame++;
+                Debug.Log("walkframe increase");
             }
-            else if (walkCountDown < 0 && canJump)
+            else
             {
-                if (walkFrame > 11)
-                {
-                    walkFrame--;
-                }
+                walkCountDown -= Time.deltaTime;
+            }
+
+
+
+
+        }
+        else if (canJump && (walkFrame > 11 && walkFrame < 17))
+        {
+            if (walkCountDown < 0 && (walkFrame > 11 && walkFrame < 17) && canJump)
+            {
+                walkFrame--;
+                Debug.Log("walkframe decrease");
                 walkCountDown = walkCountDownReset;
             }
             else
             {
                 walkCountDown -= Time.deltaTime;
             }
-            
-            
         }
+
+
+        // When player is walking
+        if (rb.velocity.x > 0.5f && canJump && (walkFrame < 12 || walkFrame > 16) || rb.velocity.x < -0.5f && canJump && (walkFrame < 12 || walkFrame > 16))
+        {
+            if (walkCountDown > 0 && canJump)
+            {
+                walkCountDown -= Time.deltaTime;
+            }
+            else if (walkCountDown < 0 && walkFrame < 11 && canJump)
+            {
+                walkCountDown = walkCountDownReset;
+                walkFrame++;
+            }
+            else
+            {
+                walkFrame = 0;
+                walkCountDown = walkCountDownReset;
+            }
+        }
+        // When player is idle 
+        else if (canJump && walkFrame < 12 && rb.velocity.x == 0f || canJump && walkFrame > 16 && rb.velocity.x == 0f)
+        {
+            if (walkCountDown > 0 && walkFrame > 16 && canJump)
+            {
+                walkCountDown -= Time.deltaTime;
+            }
+            else if (walkCountDown < 0 && walkFrame < 24 && walkFrame > 16 && canJump)
+            {
+                walkCountDown = walkCountDownReset;
+                walkFrame++;
+            }
+            else if ((walkFrame > 23 || walkFrame < 12) && canJump)
+            {
+                Debug.Log("idle reset");
+                walkFrame = 17;
+                walkCountDown = walkCountDownReset;
+            }
+        }
+        
+        
+        
 
         player.sprite = walkFrameSprite[walkFrame];
 
-        rb.velocity = move;
+        
     }
     void walkingSound()
     {
@@ -120,5 +163,13 @@ public class PlayerMovement : MonoBehaviour
         {
             audioSource.PlayOneShot(walkingSoundClip);
         }
+    }
+    void jumpingSound()
+    {
+        if(JumpSoundClip != null && !audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(JumpSoundClip);
+        }
+        
     }
 }
