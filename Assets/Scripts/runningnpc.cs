@@ -1,10 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class runningnpc : MonoBehaviour
+public class RandomSideToSideMovement : MonoBehaviour
 {
     public float speed = 5f;          // Speed of the movement
     public float distance = 5f;       // Distance the GameObject will move from its starting position
@@ -14,29 +10,22 @@ public class runningnpc : MonoBehaviour
 
     void Start()
     {
-    
-        Rigidbody2D rbObject = GetComponent<Rigidbody2D>();
         startPosition = transform.position;
-        if (rbObject.isKinematic == true)
-        {
-            speed = 0;
-
-        }
     }
 
     void Update()
     {
-        GetComponent<grabobject>();
-        // Move the GameObject side to side
-        transform.Translate(Vector3.right * direction * speed * Time.deltaTime);
+
         Rigidbody2D rbObject = GetComponent<Rigidbody2D>();
-        startPosition = transform.position;
+        
         if (rbObject.isKinematic == true)
         {
             speed = 0;
-
         }
-        //Check if the GameObject reached the maximum distance
+        // Move the GameObject side to side
+        transform.Translate(Vector3.right * direction * speed * Time.deltaTime);
+
+        // Check if the GameObject reached the maximum distance
         if (Mathf.Abs(transform.position.x - startPosition.x) >= distance)
         {
             // Change the direction to move in the opposite way
@@ -49,9 +38,8 @@ public class runningnpc : MonoBehaviour
 
     // Optional: Coroutine to randomize the waiting time before changing direction
     // IEnumerator RandomizeDirectionChange()
-     //{
-      //   yield return new WaitForSeconds(Random.Range(1f, 3f));
-        // direction *= -1;
-    //}
-   
+    // {
+    //     yield return new WaitForSeconds(Random.Range(1f, 3f));
+    //     direction *= -1;
+    // }
 }
