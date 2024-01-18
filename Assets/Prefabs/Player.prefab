@@ -125,7 +125,11 @@ GameObject:
   - component: {fileID: 6478259679080329549}
   - component: {fileID: 2096202106749071090}
   - component: {fileID: 5386490118227821184}
+<<<<<<< HEAD
+  - component: {fileID: 6660114185345386988}
+=======
   - component: {fileID: 543678775315318937}
+>>>>>>> c352b88fa6a9a5574faf452249d53f72d1507d20
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -548,11 +552,19 @@ MonoBehaviour:
   - {x: 0.03523004, y: -0.32443315, z: 0}
   m_ShapePathHash: 336322337
   m_Mesh: {fileID: 0}
+<<<<<<< HEAD
+  m_InstanceId: 96868
+  m_LocalBounds:
+    m_Center: {x: 0.058636367, y: 0.20852906, z: 0}
+    m_Extent: {x: 0.3374011, y: 0.55857617, z: 0}
+--- !u!114 &6660114185345386988
+=======
   m_InstanceId: 92478
   m_LocalBounds:
     m_Center: {x: 0.058636367, y: 0.20852906, z: 0}
     m_Extent: {x: 0.3374011, y: 0.55857617, z: 0}
 --- !u!114 &543678775315318937
+>>>>>>> c352b88fa6a9a5574faf452249d53f72d1507d20
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

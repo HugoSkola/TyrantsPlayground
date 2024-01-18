@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7582932292796674289}
   - component: {fileID: 6757422685709355681}
-  - component: {fileID: 7797863218069084743}
+  - component: {fileID: 2135647407754853047}
   m_Layer: 6
   m_Name: bomb
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.5, y: 6.9, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7797863218069084743
+--- !u!114 &2135647407754853047
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,8 +94,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5526578776725114566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbfa33e38bf2a1f4ca5734ff99e951aa, type: 3}
+  m_Script: {fileID: 11500000, guid: d147677a26b90034e8d3c693f03a3d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objects: {fileID: 5526578776725114566}
-  spawnPoint: {x: 0.5, y: 6.9}
+  spawnPoint: {x: 0, y: 0}

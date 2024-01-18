@@ -41,11 +41,19 @@ public class spanbomb : MonoBehaviour
             spawingconect.SpawnObject();
             spaningbomb = 0;
         }
-        OnDestroy();
+     
     }
     public void bombteleport()
     {
-      
+        SpawnController spawingconect = spawing.GetComponent<SpawnController>();
+        if (spaningbomb == 3)
+        {
+
+            Console.WriteLine("spaningbomb");
+            spawingconect.SpawnObject();
+            spaningbomb = 0;
+        }
+
         eHealth -= DamageTaken;
 
         if (eHealth < 0)

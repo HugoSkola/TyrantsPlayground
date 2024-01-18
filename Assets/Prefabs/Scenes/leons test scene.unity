@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpawn: {fileID: 286507991}
-  player: {fileID: 7566293991749842667, guid: 41503f64ca3c8b14dbd7417971cfc787, type: 3}
+  player: {fileID: 5794285831545425389, guid: 41503f64ca3c8b14dbd7417971cfc787, type: 3}
   playerFollower: {fileID: 1009558730}
 --- !u!4 &45470215
 Transform:
@@ -3869,6 +3869,8 @@ MonoBehaviour:
   DamageTaken: 1
   spaningbomb: 1
   spawing: {fileID: 5526578776725114566, guid: 2f55ae624cd1e6c4ca813ed3dc543a19, type: 3}
+  objects: {fileID: 0}
+  spawnPoint: {x: 0, y: 0}
 --- !u!114 &631433889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3884,6 +3886,9 @@ MonoBehaviour:
   eHealth: 2
   DamageTaken: 1
   objects: {fileID: 631433887}
+  spaningbomb: 0
+  spawing: {fileID: 0}
+  spawnPoint: {x: 0, y: 0}
 --- !u!212 &631433890
 SpriteRenderer:
   m_ObjectHideFlags: 0
