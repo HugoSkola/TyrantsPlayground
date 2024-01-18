@@ -430,7 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpawn: {fileID: 224411966}
-  player: {fileID: 5794285831545425389, guid: 41503f64ca3c8b14dbd7417971cfc787, type: 3}
+  player: {fileID: 8441655240187159765, guid: 41503f64ca3c8b14dbd7417971cfc787, type: 3}
   playerFollower: {fileID: 1909898215}
 --- !u!4 &320873292
 Transform:
