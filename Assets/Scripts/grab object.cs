@@ -31,11 +31,13 @@ public class grabobject : MonoBehaviour
     [SerializeField]
     Vector2 velocity = Vector2.one;
 
-    private GameObject grabbedObject;
+    public GameObject grabbedObject;
     private int layerIndex;
-   private void Start()
+   public void Start()
     {
         layerIndex = LayerMask.NameToLayer("objects");
+        layerIndex = LayerMask.NameToLayer("npc");
+
     }
     void Update()
     {
@@ -66,5 +68,5 @@ public class grabobject : MonoBehaviour
 
 
     
-
+        
 }
