@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class Cutscenestarter : MonoBehaviour
     void Start()
     {
         HideSpriteCutscene();
+        Console.WriteLine("hej");
     }
     
     // Update is called once per frame
