@@ -65,82 +65,91 @@ public class PlayerMovement : MonoBehaviour
             move += Vector2.up * jumpHeight;
             jumpingSound();
         }
-        // When player is walking
-        if (rb.velocity.x > 0.5f && canJump && walkFrame < 12 || rb.velocity.x < -0.5f && canJump && walkFrame < 12 )
-        {
-            if (walkCountDown > 0)
-            {
-                walkCountDown -= Time.deltaTime;
-            }
-            else if (walkCountDown < 0 && walkFrame < 11)
-            {
-                walkCountDown = walkCountDownReset;
-                walkFrame++;
-            }
-            else if (walkFrame == 11)
-            {
-                walkFrame = 0;
-                walkCountDown = walkCountDownReset;
-            }
-        }
-        // When player is idle
-        else if (canJump && walkFrame < 12 && rb.velocity.x == 0f || canJump && walkFrame > 16 && rb.velocity.x == 0f)
-        {
-            if (rb.velocity.x == 0f)
-            {
-                if (walkCountDown > 0)
-                {
-                    walkCountDown -= Time.deltaTime;
-                }
-                else if (walkCountDown < 0 && walkFrame < 24)
-                {
-                    walkCountDown = walkCountDownReset;
-                    walkFrame++;
-                }
-                else if (walkFrame > 23)
-                {
-                    walkFrame = 17;
-                    walkCountDown = walkCountDownReset;
-                }
-            }
-            else
-            {
-                walkFrame = 0;
-            }
-        }
+
+        rb.velocity = move;
+
         // When player is jumping
-        else if (!canJump)
+        if (!canJump)
         {
-            if (walkFrame < 12)
+            if (walkFrame > 16 || walkFrame < 12)
             {
                 walkFrame = 12;
             }
-            else if (walkCountDown < 0 && walkFrame < 16 && !canJump)
+
+            if (walkCountDown < 0 && (walkFrame < 16 || walkFrame > 16))
             {
                 walkCountDown = walkCountDownReset;
                 walkFrame++;
+                Debug.Log("walkframe increase");
             }
-            else if (walkCountDown < 0 && canJump)
+            else
             {
-                if (walkFrame > 11)
-                {
-                    walkFrame--;
-                }
+                walkCountDown -= Time.deltaTime;
+            }
+
+
+
+
+        }
+        else if (canJump && (walkFrame > 11 && walkFrame < 17))
+        {
+            if (walkCountDown < 0 && (walkFrame > 11 && walkFrame < 17) && canJump)
+            {
+                walkFrame--;
+                Debug.Log("walkframe decrease");
                 walkCountDown = walkCountDownReset;
             }
             else
             {
                 walkCountDown -= Time.deltaTime;
-            }   
+            }
         }
-        else
+
+
+        // When player is walking
+        if (rb.velocity.x > 0.5f && canJump && (walkFrame < 12 || walkFrame > 16) || rb.velocity.x < -0.5f && canJump && (walkFrame < 12 || walkFrame > 16))
         {
-            walkFrame = 0;
+            if (walkCountDown > 0 && canJump)
+            {
+                walkCountDown -= Time.deltaTime;
+            }
+            else if (walkCountDown < 0 && walkFrame < 11 && canJump)
+            {
+                walkCountDown = walkCountDownReset;
+                walkFrame++;
+            }
+            else
+            {
+                walkFrame = 0;
+                walkCountDown = walkCountDownReset;
+            }
         }
+        // When player is idle 
+        else if (canJump && walkFrame < 12 && rb.velocity.x == 0f || canJump && walkFrame > 16 && rb.velocity.x == 0f)
+        {
+            if (walkCountDown > 0 && walkFrame > 16 && canJump)
+            {
+                walkCountDown -= Time.deltaTime;
+            }
+            else if (walkCountDown < 0 && walkFrame < 24 && walkFrame > 16 && canJump)
+            {
+                walkCountDown = walkCountDownReset;
+                walkFrame++;
+            }
+            else if ((walkFrame > 23 || walkFrame < 12) && canJump)
+            {
+                Debug.Log("idle reset");
+                walkFrame = 17;
+                walkCountDown = walkCountDownReset;
+            }
+        }
+        
+        
+        
 
         player.sprite = walkFrameSprite[walkFrame];
 
-        rb.velocity = move;
+        
     }
     void walkingSound()
     {
