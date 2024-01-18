@@ -28108,7 +28108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpawn: {fileID: 408196528}
-  player: {fileID: 8441655240187159765, guid: 41503f64ca3c8b14dbd7417971cfc787, type: 3}
+  player: {fileID: 1479350243362236770, guid: 41503f64ca3c8b14dbd7417971cfc787, type: 3}
   playerFollower: {fileID: 163841691}
 --- !u!4 &2060470552
 Transform:
