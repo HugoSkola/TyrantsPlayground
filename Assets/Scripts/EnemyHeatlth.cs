@@ -13,7 +13,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] public GameObject objects; 
 
     [SerializeField]
-    int spaningbomb = 0;
+    public int spaningbomb = 0;
     public GameObject spawing;
 
     [SerializeField] public Vector2 spawnPoint;
