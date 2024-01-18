@@ -16,6 +16,5 @@ public class HurtPlayer : MonoBehaviour
         }
 
         phealth.Hurt(hurtAmount);
-        Destroy(gameObject);
     }
 }
