@@ -59,12 +59,12 @@ public class RebelAI : MonoBehaviour
             if (playerpos.x < 0)
             {
                 transform.localScale = new Vector2(1, 1);
-                rb.velocity = new Vector2(-5, rb.velocity.y);
+                rb.velocity = new Vector2(-1 * moveSpeed, rb.velocity.y);
             }
             if (playerpos.x > 0)
             {
                 transform.localScale = new Vector2(-1, 1);
-                rb.velocity = new Vector2(5, rb.velocity.y);
+                rb.velocity = new Vector2(1 * moveSpeed, rb.velocity.y);
             }
         }
         Debug.Log(playerpos);
