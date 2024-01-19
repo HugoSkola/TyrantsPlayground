@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Prefabs/Scenes/Morgan Scene.unity
     guid: 3ae4332c5dc8f534fba33d0f0f1dff86
+  - enabled: 1
+    path: Assets/Scenes/level 2 leon.unity
+    guid: 623ecd4cc4e19f141a2a5e902137fa7c
+  - enabled: 1
+    path: Assets/Scenes/cutscene.unity
+    guid: 8588a5343db9dc34183240c8b5b0fee3
   m_configObjects: {}
