@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class catapultcode : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class catapultcode : MonoBehaviour
     {
         if (cutscene==3)
         {
-            ShowSpriteCutscene();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Laddar scener eller nivår för spelet
         }
     }
 
