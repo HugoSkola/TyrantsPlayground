@@ -2,27 +2,31 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Cutscenestarter : MonoBehaviour
 {
     public GameObject fullscreenSpriteCanvas;
     public bool isInteractionActive = false;
+    ObjectDestroyCounter ObjectDestroyCounter;
 
     public float theDurationPictureShowsFor = 1f;
     // Start is called before the first frame update
     void Start()
     {
         HideSpriteCutscene();
-        Console.WriteLine("hej");
+
     }
     
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && isInteractionActive == true)
+        if (Input.GetKeyDown(KeyCode.W) && isInteractionActive == true && ObjectDestroyCounter.currentDestroyCount == 7)
         {
+
             ShowSpriteCutscene();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Laddar scener eller nivår för spelet
         }
     }
     
