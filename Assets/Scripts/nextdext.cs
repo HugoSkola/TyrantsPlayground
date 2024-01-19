@@ -2,31 +2,38 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class nextdext : MonoBehaviour
 {
     public GameObject fullscreenSpriteCanvas;
-    public bool isInteractionActive = false;
+    public bool isInteractionActive = true;
+    public AnimationClip Animation;
 
     public float theDurationPictureShowsFor = 1f;
     // Start is called before the first frame update
     void Start()
     {
-        HideSpriteCutscene();
-        Console.WriteLine("hej");
+        
+        if (Keyboard.current.cKey.wasPressedThisFrame)
+        {
+            ShowSpriteCutscene();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Laddar scener eller nivår för spelet
+        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (true)
+        if (Keyboard.current.cKey.wasPressedThisFrame)
         {
             ShowSpriteCutscene();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Laddar scener eller nivår för spelet
         }
     }
-
+    /*
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -43,18 +50,19 @@ public class nextdext : MonoBehaviour
             isInteractionActive = false;
         }
     }
-
+    */
     void ShowSpriteCutscene()
     {
         fullscreenSpriteCanvas.SetActive(true);
 
         Invoke("HideSpriteCutscene", theDurationPictureShowsFor);
     }
+    /*
     void HideSpriteCutscene()
     {
         fullscreenSpriteCanvas.SetActive(false);
     }
-
+    */
     
        
     
