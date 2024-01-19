@@ -35,7 +35,7 @@ public class Shooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && shootingDelay < 0)
+        if (Input.GetKeyDown(KeyCode.S) && shootingDelay < 0)
         {
             ShooterAnimation.SetActive(true);
             shootingDelay = 1;
