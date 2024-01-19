@@ -27,11 +27,17 @@ public class Projectile : MonoBehaviour
 
         GameObject enemyGameobject = collision.gameObject;
         EnemyHealth enemyComponent = enemyGameobject.GetComponent<EnemyHealth>();
+        BarrelExplosion barrelComponent = enemyGameobject.GetComponent<BarrelExplosion>();
+        
 
         if(enemyComponent != null)
         {
             enemyComponent.eTakeDamage();
             
+        }
+        else if (barrelComponent != null)
+        {
+            barrelComponent.eTakeDamage();
         }
         Destroy(gameObject);
        
