@@ -26,6 +26,7 @@ public class Shooter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        shootingDelay = -1;
         ShooterAnimation.SetActive(false);
         audioSource = GetComponent<AudioSource>();
         sr = GetComponent<SpriteRenderer>();
@@ -34,12 +35,17 @@ public class Shooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && Time.time >= nextFireTime)
+        if (Input.GetKeyDown(KeyCode.F) && shootingDelay < 0)
         {
             ShooterAnimation.SetActive(true);
+            shootingDelay = 1;
             sr.enabled = false;
             ShootBullet();
             Invoke("ResetAnimation", 0.5f);
+        }
+        else if (shootingDelay > 0)
+        {
+            shootingDelay -= Time.deltaTime;
         }
     }
     private void ResetAnimation()

@@ -232,7 +232,7 @@ MonoBehaviour:
   walkCountDownReset: 0.04
   maxWalkFrame: 11
   walkFrame: 0
-  aggroRange: 10
+  aggroRange: 7
   walkFrameSprite:
   - {fileID: 141900523, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
   - {fileID: 906134582, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
