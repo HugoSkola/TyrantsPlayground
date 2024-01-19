@@ -443,7 +443,7 @@ MonoBehaviour:
   - {x: 0.03523004, y: -0.32443315, z: 0}
   m_ShapePathHash: 336322337
   m_Mesh: {fileID: 0}
-  m_InstanceId: 255728
+  m_InstanceId: 113298
   m_LocalBounds:
     m_Center: {x: 0.058636367, y: 0.20852906, z: 0}
     m_Extent: {x: 0.3374011, y: 0.55857617, z: 0}
@@ -579,7 +579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 284835729823203666, guid: 78759beba9faa29409e0e7995e94037b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: -1.99
       objectReference: {fileID: 0}
     - target: {fileID: 284835729823203666, guid: 78759beba9faa29409e0e7995e94037b, type: 3}
       propertyPath: m_LocalPosition.y
