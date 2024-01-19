@@ -1,39 +1,49 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class catapultcode : MonoBehaviour
+public class nextdext : MonoBehaviour
 {
-    [SerializeField]
-   public int cutscene = 0;
     public GameObject fullscreenSpriteCanvas;
     public bool isInteractionActive = false;
 
     public float theDurationPictureShowsFor = 1f;
-
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         HideSpriteCutscene();
+        Console.WriteLine("hej");
     }
+
+    // Update is called once per frame
     void Update()
     {
-        if (cutscene>30)
+        if (true)
         {
+            ShowSpriteCutscene();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Laddar scener eller nivår för spelet
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if the collision involves the GameObject you want to react to
-        if (collision.gameObject.CompareTag("npc"))
+        if (other.CompareTag("Player"))
         {
-            cutscene += 1;
-            Debug.Log("Collision occurred! Triggering an event...");
-            // Add your custom code here
+            isInteractionActive = true;
         }
     }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Player leaving");
+            isInteractionActive = false;
+        }
+    }
+
     void ShowSpriteCutscene()
     {
         fullscreenSpriteCanvas.SetActive(true);
@@ -44,11 +54,11 @@ public class catapultcode : MonoBehaviour
     {
         fullscreenSpriteCanvas.SetActive(false);
     }
+
+    
+       
+    
+
+    // Update is called once per frame
+   
 }
-
-
-
-
-
-
-
