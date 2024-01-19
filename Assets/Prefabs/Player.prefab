@@ -62,7 +62,7 @@ MonoBehaviour:
     m_Bits: 72
   jumpHeight: 7
   moveSpeed: 5
-  canJump: 1
+  canJump: 0
   walkCountDown: 0.04
   walkCountDownReset: 0.04
   maxWalkFrame: 0
