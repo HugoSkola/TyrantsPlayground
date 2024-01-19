@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
 
     void GameOver()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Laddar scener e
+        SceneManager.LoadScene(1);
     }
 }
                 
