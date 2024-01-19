@@ -6,8 +6,8 @@ public class ObjectDestroyCounter : MonoBehaviour
 {
     public GameObject kidsconect;
     // Start is called before the first frame update
-    public int targetDestroyCount = 6;  // Set the desired number of destroyed game objects
-    private int currentDestroyCount = 0;
+    static public int targetDestroyCount = 7;  // Set the desired number of destroyed game objects
+    static public int currentDestroyCount = 0;
 
     void Start()
     {
@@ -46,7 +46,7 @@ public class ObjectDestroyCounter : MonoBehaviour
         if (objects != null && spawnPoint != null)
         {
             // Instantiate the object at the spawn point position
-            Instantiate(objects, new Vector3(0.5f, 6.9f, 1), Quaternion.identity);
+            Instantiate(objects, new Vector3(11.97f, 3f, 1), Quaternion.identity);
         }
         else
         {
