@@ -46,7 +46,7 @@ public class ObjectDestroyCounter : MonoBehaviour
         if (objects != null && spawnPoint != null)
         {
             // Instantiate the object at the spawn point position
-            Instantiate(objects, new Vector3(0.5f, 6.9f, 1), Quaternion.identity);
+            Instantiate(objects, new Vector3(11.97f, 3f, 1), Quaternion.identity);
         }
         else
         {
