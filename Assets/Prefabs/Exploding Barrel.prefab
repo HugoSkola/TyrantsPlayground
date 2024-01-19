@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   countdown: 0.5
+  explosion: {fileID: 7066618433864878448, guid: 64a31f07fbf77a94a8f154495613d7ca, type: 3}
 --- !u!61 &7172901694727248465
 BoxCollider2D:
   m_ObjectHideFlags: 0

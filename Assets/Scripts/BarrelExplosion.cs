@@ -7,6 +7,7 @@ public class BarrelExplosion : MonoBehaviour
 {
     public bool active;
     public float countdown;
+    public GameObject explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,7 @@ public class BarrelExplosion : MonoBehaviour
     public void eTakeDamage()
     {
         active = true;
-
+        Instantiate(explosion, Vector2.zero, Quaternion.identity);
         
     }
 
