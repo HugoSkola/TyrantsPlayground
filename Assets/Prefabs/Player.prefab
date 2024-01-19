@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 3505136674156850247}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +152,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -225,7 +225,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.98, y: 0.3272705}
+  m_Size: {x: 0.92, y: 0.3272705}
   m_EdgeRadius: 0
 --- !u!212 &4171309642709675691
 SpriteRenderer:
@@ -443,7 +443,7 @@ MonoBehaviour:
   - {x: 0.03523004, y: -0.32443315, z: 0}
   m_ShapePathHash: 336322337
   m_Mesh: {fileID: 0}
-  m_InstanceId: 152364
+  m_InstanceId: 255728
   m_LocalBounds:
     m_Center: {x: 0.058636367, y: 0.20852906, z: 0}
     m_Extent: {x: 0.3374011, y: 0.55857617, z: 0}
