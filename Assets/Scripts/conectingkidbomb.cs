@@ -6,11 +6,12 @@ public class ObjectDestroyCounter : MonoBehaviour
 {
     public GameObject kidsconect;
     // Start is called before the first frame update
-    static public int targetDestroyCount = 7;  // Set the desired number of destroyed game objects
-    static public int currentDestroyCount = 0;
+    public int targetDestroyCount = 7;  // Set the desired number of destroyed game objects
+    public int currentDestroyCount = 0;
 
     void Start()
     {
+        currentDestroyCount = 0;
         // Subscribe to the OnDestroy event of the game objects you want to track
         ObjectDestroyed.OnObjectDestroyed += HandleObjectDestroyed;
     }

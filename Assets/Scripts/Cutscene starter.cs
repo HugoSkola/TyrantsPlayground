@@ -15,18 +15,17 @@ public class Cutscenestarter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        HideSpriteCutscene();
+        fullscreenSpriteCanvas.SetActive(false);
 
     }
     
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && isInteractionActive == true && ObjectDestroyCounter.currentDestroyCount == 7)
-        {
 
+        if (Input.GetKeyDown(KeyCode.W) && isInteractionActive && ObjectDestroyCounter.currentDestroyCount > 6)
+        {
             ShowSpriteCutscene();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Laddar scener eller nivår för spelet
         }
     }
     
@@ -56,5 +55,6 @@ public class Cutscenestarter : MonoBehaviour
     void HideSpriteCutscene()
     {
         fullscreenSpriteCanvas.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Laddar scener eller nivår för spelet
     }
 }
