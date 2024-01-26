@@ -9,14 +9,15 @@ public class PlayerHealth : MonoBehaviour
     public Image heatlbar;
     
     [SerializeField]
-    public float maxHealth=100f;
+    public float maxHealth=5f;
 
-    public float health=100f;
+    public float health=5f;
 
     // Start is called before the first frame update
     void Start()
     {
         health = maxHealth;
+        heatlbar = GameObject.Find("heatlbar").GetComponent<Image>();
     }
 
     public void Hurt(int amount)
@@ -27,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
         {
             GameOver();
         }
-        heatlbar.fillAmount = health / 100f;
+        heatlbar.fillAmount = health / 5f;
     }
 
     void GameOver()

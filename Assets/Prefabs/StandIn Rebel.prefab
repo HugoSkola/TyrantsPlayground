@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c0b73d5a228b5941821ccfb7c485c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hurtAmount: 20
+  hurtAmount: 1
   attackAnim: {fileID: 8447186430447783306}
   countdown: 1
   countdownReset: 1
