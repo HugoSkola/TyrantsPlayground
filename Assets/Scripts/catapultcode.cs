@@ -18,7 +18,7 @@ public class catapultcode : MonoBehaviour
     }
     void Update()
     {
-        if (cutscene==3)
+        if (cutscene>28)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Laddar scener eller nivår för spelet
         }

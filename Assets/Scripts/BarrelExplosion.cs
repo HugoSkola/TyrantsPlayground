@@ -17,7 +17,7 @@ public class BarrelExplosion : MonoBehaviour
     public void eTakeDamage()
     {
         active = true;
-        Instantiate(explosion, Vector2.zero, Quaternion.identity);
+        Instantiate(explosion, transform.position, Quaternion.identity, gameObject.transform);
         
     }
 

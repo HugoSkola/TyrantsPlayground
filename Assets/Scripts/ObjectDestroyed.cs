@@ -10,7 +10,7 @@ public class ObjectDestroyed : MonoBehaviour
     {
        
         // Invoke the event when the object is destroyed
-        OnObjectDestroyed?.Invoke();
+        OnObjectDestroyed.Invoke();
     }
 
 }

@@ -232,7 +232,7 @@ MonoBehaviour:
   walkCountDownReset: 0.04
   maxWalkFrame: 11
   walkFrame: 0
-  aggroRange: 10
+  aggroRange: 7
   walkFrameSprite:
   - {fileID: 141900523, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
   - {fileID: 906134582, guid: 8ead29b7c11fbf54686721d116533904, type: 3}
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c0b73d5a228b5941821ccfb7c485c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hurtAmount: 1
+  hurtAmount: 20
   attackAnim: {fileID: 8447186430447783306}
   countdown: 1
   countdownReset: 1

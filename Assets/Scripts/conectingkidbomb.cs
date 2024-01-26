@@ -5,18 +5,22 @@ using UnityEngine;
 public class ObjectDestroyCounter : MonoBehaviour
 {
     public GameObject kidsconect;
+    public GameObject cutsceneStarter;
     // Start is called before the first frame update
-    static public int targetDestroyCount = 7;  // Set the desired number of destroyed game objects
-    static public int currentDestroyCount = 0;
+    public int targetDestroyCount = 7;  // Set the desired number of destroyed game objects
+    public int currentDestroyCount = 0;
 
     void Start()
     {
+        currentDestroyCount = 0;
         // Subscribe to the OnDestroy event of the game objects you want to track
         ObjectDestroyed.OnObjectDestroyed += HandleObjectDestroyed;
     }
 
     void OnDestroy()
     {
+        Cutscenestarter cutscene = cutsceneStarter.GetComponent<Cutscenestarter>();
+        cutscene.KidIsKilled();
         // Unsubscribe to prevent memory leaks when the script is destroyed
         ObjectDestroyed.OnObjectDestroyed -= HandleObjectDestroyed;
     }
@@ -38,6 +42,12 @@ public class ObjectDestroyCounter : MonoBehaviour
     [SerializeField] public GameObject objects;
     [SerializeField] public Vector2 spawnPoint;
 
+    private void Update()
+    {
+        Cutscenestarter cutscene = cutsceneStarter.GetComponent<Cutscenestarter>();
+        cutscene.NumberOfKidsDestroyed(currentDestroyCount);
+    }
+
 
     public void SpawnObject()
     {
@@ -46,7 +56,7 @@ public class ObjectDestroyCounter : MonoBehaviour
         if (objects != null && spawnPoint != null)
         {
             // Instantiate the object at the spawn point position
-            Instantiate(objects, new Vector3(0.5f, 6.9f, 1), Quaternion.identity);
+            Instantiate(objects, new Vector3(11.97f, 3f, 1), Quaternion.identity);
         }
         else
         {
