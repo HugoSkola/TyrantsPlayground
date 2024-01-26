@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public Image heatlbar;
+    
     [SerializeField]
-    int maxHealth = 3;
+    public float maxHealth=100f;
 
-    public int health;
+    public float health=100f;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,7 @@ public class PlayerHealth : MonoBehaviour
         {
             GameOver();
         }
+        heatlbar.fillAmount = health / 100f;
     }
 
     void GameOver()
