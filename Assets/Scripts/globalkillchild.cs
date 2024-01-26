@@ -13,7 +13,7 @@ public class globalkillchild : MonoBehaviour
         {
 
             Cutscenestarter cutscene = cutsceneStarter.GetComponent<Cutscenestarter>();
-            cutscene.KidIsKilled(1);
+            cutscene.KidIsKilled();
             // This code will be executed when the GameObject is destroyed
 
             // Example: Check if a certain condition is met before performing an action
