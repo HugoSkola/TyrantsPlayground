@@ -10,20 +10,26 @@ public class Cutscenestarter : MonoBehaviour
     public GameObject fullscreenSpriteCanvas;
     public bool isInteractionActive = false;
     ObjectDestroyCounter ObjectDestroyCounter;
+    public int kidsKilled;
 
     public float theDurationPictureShowsFor = 1f;
     // Start is called before the first frame update
     void Start()
     {
+        kidsKilled = 0;
         fullscreenSpriteCanvas.SetActive(false);
+    }
 
+    public void KidIsKilled(int kidKilled)
+    {
+        kidsKilled += kidKilled;
     }
     
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.W) && isInteractionActive && ObjectDestroyCounter.currentDestroyCount > 6)
+        if (Input.GetKeyDown(KeyCode.W) && isInteractionActive && kidsKilled > 6)
         {
             ShowSpriteCutscene();
         }

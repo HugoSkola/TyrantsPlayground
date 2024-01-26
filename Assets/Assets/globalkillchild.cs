@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class globalkillchild : MonoBehaviour
 {
+    public GameObject cutsceneStarter;
 
-  
     void Start()
     {
         
         void OnDestroy()
         {
+
+            Cutscenestarter cutscene = cutsceneStarter.GetComponent<Cutscenestarter>();
+            cutscene.KidIsKilled(1);
             // This code will be executed when the GameObject is destroyed
 
             // Example: Check if a certain condition is met before performing an action

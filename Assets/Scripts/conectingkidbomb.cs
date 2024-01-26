@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObjectDestroyCounter : MonoBehaviour
 {
     public GameObject kidsconect;
+    public GameObject cutsceneStarter;
     // Start is called before the first frame update
     public int targetDestroyCount = 7;  // Set the desired number of destroyed game objects
     public int currentDestroyCount = 0;
@@ -18,6 +19,8 @@ public class ObjectDestroyCounter : MonoBehaviour
 
     void OnDestroy()
     {
+        Cutscenestarter cutscene = cutsceneStarter.GetComponent<Cutscenestarter>();
+        cutscene.KidIsKilled(1);
         // Unsubscribe to prevent memory leaks when the script is destroyed
         ObjectDestroyed.OnObjectDestroyed -= HandleObjectDestroyed;
     }
