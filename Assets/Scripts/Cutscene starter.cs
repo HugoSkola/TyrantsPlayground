@@ -20,9 +20,14 @@ public class Cutscenestarter : MonoBehaviour
         fullscreenSpriteCanvas.SetActive(false);
     }
 
-    public void KidIsKilled(int kidKilled)
+    public void NumberOfKidsDestroyed(int deadKids)
     {
-        kidsKilled += kidKilled;
+        kidsKilled = deadKids;
+    }
+
+    public void KidIsKilled()
+    {
+        kidsKilled++;
     }
     
     // Update is called once per frame

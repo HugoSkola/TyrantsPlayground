@@ -20,7 +20,7 @@ public class ObjectDestroyCounter : MonoBehaviour
     void OnDestroy()
     {
         Cutscenestarter cutscene = cutsceneStarter.GetComponent<Cutscenestarter>();
-        cutscene.KidIsKilled(1);
+        cutscene.KidIsKilled();
         // Unsubscribe to prevent memory leaks when the script is destroyed
         ObjectDestroyed.OnObjectDestroyed -= HandleObjectDestroyed;
     }
@@ -41,6 +41,12 @@ public class ObjectDestroyCounter : MonoBehaviour
 
     [SerializeField] public GameObject objects;
     [SerializeField] public Vector2 spawnPoint;
+
+    private void Update()
+    {
+        Cutscenestarter cutscene = cutsceneStarter.GetComponent<Cutscenestarter>();
+        cutscene.NumberOfKidsDestroyed(currentDestroyCount);
+    }
 
 
     public void SpawnObject()
