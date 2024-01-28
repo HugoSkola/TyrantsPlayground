@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 945027db61b37ec489647d9ec1af887b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heatlbar: {fileID: 0}
+  heatlbar: {fileID: 5931574573463430484, guid: a37bfb111935bd94a99d9e60fb0b9185, type: 3}
   maxHealth: 5
   health: 5
 --- !u!50 &7736463218026862804
