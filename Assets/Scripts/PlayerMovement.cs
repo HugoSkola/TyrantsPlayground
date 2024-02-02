@@ -66,6 +66,15 @@ public class PlayerMovement : MonoBehaviour
                 walkingSound();
             }
         }
+        if (Input.GetKey(KeyCode.E))
+        {
+            transform.localScale = new Vector2(-1, 1);
+            move += Vector2.left * moveSpeed;
+            if (canJump)
+            {
+                walkingSound();
+            }
+        }
         if (canJump && Input.GetKeyDown(KeyCode.Space))
         {
             move += Vector2.up * jumpHeight;
