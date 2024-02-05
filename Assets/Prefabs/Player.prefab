@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 2602371388433400821}
   - component: {fileID: 3505136674156850247}
   - component: {fileID: 1328354617606051407}
+  - component: {fileID: -4853258175038544905}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -63,6 +64,7 @@ MonoBehaviour:
     m_Bits: 72
   jumpHeight: 7
   moveSpeed: 5
+  forceMagnitude: 10
   canJump: 0
   walkCountDown: 0.04
   walkCountDownReset: 0.04
@@ -482,6 +484,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-4853258175038544905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479350243362236770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee81ae5ca7816e48aad6602f5967011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashDistance: 5
+  dashDuration: 0.5
 --- !u!1 &4599699290538737414
 GameObject:
   m_ObjectHideFlags: 0
