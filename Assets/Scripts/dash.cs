@@ -9,10 +9,11 @@ public class dash : MonoBehaviour
     private bool isDashing = false;
     public float cooldowndash = 1f;
     public float forceMagnitude = 10f;
+    Rigidbody2D rb;
 
     private void Start()
     {
-     
+        rb = GetComponent<Rigidbody2D>();
         cooldowndash = -1;
     }
 
@@ -60,13 +61,14 @@ public class dash : MonoBehaviour
         float elapsedTime = 0f;
         while (elapsedTime < dashDuration)
         {
-            transform.position = Vector2.Lerp(startPosition, endPosition, elapsedTime / dashDuration);
+            rb.MovePosition(Vector2.Lerp(startPosition, endPosition, elapsedTime / dashDuration));
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
 
-        transform.position = endPosition;
+        //transform.position = endPosition;
+        rb.MovePosition(endPosition);
         
         isDashing = false;
     }
