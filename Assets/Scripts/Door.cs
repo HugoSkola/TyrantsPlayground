@@ -91,7 +91,7 @@ public class Door : MonoBehaviour
 
         doorType.sprite = doorInstanceSprite[doorInstance];
         
-        if (rebelManager.transform.childCount > 0)
+        /*  if (rebelManager.transform.childCount > 0)
         {
             doorsActive = false;
             byDoor = false;
@@ -99,7 +99,7 @@ public class Door : MonoBehaviour
         else
         {
             doorsActive = true;
-        }
+        }*/
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
