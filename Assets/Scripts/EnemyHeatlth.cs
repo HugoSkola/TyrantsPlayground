@@ -22,14 +22,14 @@ public class EnemyHealth : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-        SpawnController spawingconect = spawing.GetComponent<SpawnController>();
+      /*  SpawnController spawingconect = spawing.GetComponent<SpawnController>();
         if (spaningbomb == 3)
         {
 
             Console.WriteLine("spaningbomb");
             spawingconect.SpawnObject();
             spaningbomb = 0;
-        }
+        }*/
 
     }
 
@@ -37,14 +37,14 @@ public class EnemyHealth : MonoBehaviour
    public void Update()
     {
 
-        SpawnController spawingconect = spawing.GetComponent<SpawnController>();
+        /* SpawnController spawingconect = spawing.GetComponent<SpawnController>();
         if (spaningbomb == 3)
         {
 
             Console.WriteLine("spaningbomb");
             spawingconect.SpawnObject();
             spaningbomb = 0;
-        }
+        } */
 
 
     }

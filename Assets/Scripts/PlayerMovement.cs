@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -7,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask ground;
     public float jumpHeight;
     public float moveSpeed;
+    public float forceMagnitude = 10f;
     Vector2 move;
     Rigidbody2D rb;
     public bool canJump = true;
@@ -42,6 +44,11 @@ public class PlayerMovement : MonoBehaviour
             canJump = false;
         }
     }
+    void FixedUpdate()
+    {
+        
+        rb.AddForce(transform.forward * forceMagnitude, ForceMode2D.Force);
+    }
 
     // Update is called once per frame
     void Update()
@@ -66,15 +73,7 @@ public class PlayerMovement : MonoBehaviour
                 walkingSound();
             }
         }
-        if (Input.GetKey(KeyCode.E))
-        {
-            transform.localScale = new Vector2(-1, 1);
-            move += Vector2.left * moveSpeed;
-            if (canJump)
-            {
-                walkingSound();
-            }
-        }
+ 
         if (canJump && Input.GetKeyDown(KeyCode.Space))
         {
             move += Vector2.up * jumpHeight;
