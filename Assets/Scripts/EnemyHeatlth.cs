@@ -30,17 +30,14 @@ public class EnemyHealth : MonoBehaviour
 
     void Start()
     {
-
-        Bossbar = GameObject.Find("").GetComponent<Image>();
-        SpawnController spawingconect = spawing.GetComponent<SpawnController>();
+      /*  SpawnController spawingconect = spawing.GetComponent<SpawnController>();
         if (spaningbomb == 3)
         {
 
             Console.WriteLine("spaningbomb");
             spawingconect.SpawnObject();
             spaningbomb = 0;
-            Console.WriteLine("get");
-        }
+        }*/
 
     }
 
@@ -48,15 +45,14 @@ public class EnemyHealth : MonoBehaviour
     public void Update()
     {
 
-
-        SpawnController spawingconect = spawing.GetComponent<SpawnController>();
+        /* SpawnController spawingconect = spawing.GetComponent<SpawnController>();
         if (spaningbomb == 3)
         {
 
             Console.WriteLine("spaningbomb");
             spawingconect.SpawnObject();
             spaningbomb = 0;
-        }
+        } */
 
 
     }
