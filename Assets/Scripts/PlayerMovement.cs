@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        
+     
         rb.AddForce(transform.forward * forceMagnitude, ForceMode2D.Force);
     }
 
