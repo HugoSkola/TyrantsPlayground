@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 945027db61b37ec489647d9ec1af887b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heatlbar: {fileID: 2416134897720240391, guid: 4512eac8f3abb684e892882cb7f86045, type: 3}
+  heatlbar: {fileID: 1406581520048108755, guid: 9f79ca2a8f0db2f4d98e1aa920628e30, type: 3}
   maxHealth: 5
   health: 5
 --- !u!50 &7736463218026862804
@@ -500,7 +500,6 @@ MonoBehaviour:
   dashDuration: 0.5
   cooldowndash: 1
   forceMagnitude: 10
-  moveSpeed: 0
 --- !u!1 &4599699290538737414
 GameObject:
   m_ObjectHideFlags: 0

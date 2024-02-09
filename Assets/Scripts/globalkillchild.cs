@@ -25,6 +25,7 @@ public class globalkillchild : MonoBehaviour
         }
     }
 
+
     bool ShouldPerformAction()
     {
         // Your condition logic here

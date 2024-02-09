@@ -58,6 +58,7 @@ public class ObjectDestroyCounter : MonoBehaviour
             // Instantiate the object at the spawn point position
             Instantiate(objects, new Vector3(11.97f, 3f, 1), Quaternion.identity);
         }
+
         else
         {
             Debug.LogError("Please assign the objectToSpawn and spawnPoint in the inspector.");

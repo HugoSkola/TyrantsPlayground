@@ -10,13 +10,13 @@ public class enemydash : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L) && !isDashing)
+        if (isDashing)
         {
-            StartCoroutine(Dash());
+            StartCoroutine(EnemyDash());
         }
     }
 
-    IEnumerator Dash()
+    IEnumerator EnemyDash()
     {
         isDashing = true;
 
