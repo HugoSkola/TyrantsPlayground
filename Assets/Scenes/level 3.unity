@@ -6565,8 +6565,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.81219995, y: -0.45230007, z: 0}
-    m_Extent: {x: 3.7729998, y: 3.5942001, z: 0}
+    m_Center: {x: 0.81595016, y: -0.45054996, z: 0}
+    m_Extent: {x: 3.77235, y: 3.5879498, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8280,8 +8280,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.46255016, y: -0.11280012, z: 0}
-    m_Extent: {x: 14.28545, y: 15.0693, z: 0}
+    m_Center: {x: 0.45534992, y: -0.12419987, z: 0}
+    m_Extent: {x: 14.29015, y: 15.0647, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8775,7 +8775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db5e75b337b4e74786ceef90451a785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eHealth: 30
+  eHealth: 2
   DamageTaken: 1
   objects: {fileID: 0}
   spaningbomb: 0
@@ -14790,7 +14790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db5e75b337b4e74786ceef90451a785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eHealth: 30
+  eHealth: 2
   DamageTaken: 1
   objects: {fileID: 0}
   spaningbomb: 0
@@ -15415,7 +15415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db5e75b337b4e74786ceef90451a785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eHealth: 30
+  eHealth: 2
   DamageTaken: 1
   objects: {fileID: 0}
   spaningbomb: 0
@@ -16128,7 +16128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db5e75b337b4e74786ceef90451a785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eHealth: 30
+  eHealth: 2
   DamageTaken: 1
   objects: {fileID: 0}
   spaningbomb: 0
@@ -16615,7 +16615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db5e75b337b4e74786ceef90451a785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eHealth: 30
+  eHealth: 2
   DamageTaken: 1
   objects: {fileID: 0}
   spaningbomb: 0
@@ -17916,7 +17916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db5e75b337b4e74786ceef90451a785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eHealth: 30
+  eHealth: 2
   DamageTaken: 1
   objects: {fileID: 0}
   spaningbomb: 0
